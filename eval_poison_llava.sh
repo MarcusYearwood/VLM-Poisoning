@@ -17,7 +17,8 @@ fi
 
 ### the following are automatic
 clean_data_name=cc_sbu_align
-test_image_folder=data/task_data/$task_name/target_test
+poison_image_folder=data/poisons/$model_setting/$task_name/image
+
 
 if [[ "$task_name" == "healthyFood_base_hamburgerFries_target" ]]
 then
@@ -61,6 +62,6 @@ do
       do    
             model=$SAVE_ROOT/checkpoints/$model_setting/$clean_data_name-$task_name/poison_$num_poison-seed_$seed/
             echo GPU=$GPU_ID Running eval poison scripts for: $model $prompt
-            CUDA_VISIBLE_DEVICES=$GPU_ID python eval_poison_llava.py --prompt "$prompt" --model-path $model --test_image_folder $test_image_folder
+            CUDA_VISIBLE_DEVICES=$GPU_ID python eval_poison_llava.py --prompt "$prompt" --model-path $model --poison_image_folder $poison_image_folder --poison_save_pth data/poisons/$model_setting/$task_name
       done
 done
