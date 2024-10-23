@@ -15,6 +15,8 @@
 <br>Neurips, 2024</span>
 </p>
 
+# /home/users/mxy/miniconda3/envs/VLM_Poisoning/bin/pip
+
 <p align='center' style="text-align:center;font-size:2.5 em;">
 <b>
     <a href="https://arxiv.org/abs/2402.06659" target="_blank" style="text-decoration: none;">Paper</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
