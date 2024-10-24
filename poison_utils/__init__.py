@@ -1,3 +1,16 @@
+import os
+import torch
+import json
+import shutil
+from PIL import Image
+from tqdm import tqdm
+import matplotlib.pyplot as plt
+from torchvision import transforms
+from torchvision.utils import save_image
+from torchvision.transforms.functional import InterpolationMode
+
+
+
 def save_poison_data(images_to_save, caption_pth, save_path):
       '''
       Save the pure poison data set as the same folder format as cc_sbu_align
@@ -31,6 +44,16 @@ def save_poison_data(images_to_save, caption_pth, save_path):
 
       print('Finished saving the pure poison data to {}'.format(save_path))
 
+def L2_norm(a,b):
+      '''
+      a,b: batched image/representation tensors
+      '''
+      assert a.size(0) == b.size(0), 'two inputs contain different number of examples'
+      bs = a.size(0)
+
+      dist_vec = (a-b).view(bs,-1).norm(p=2, dim=1)
+
+      return dist_vec
 
 def load_image(image_path, show_image=True):
     img = Image.open(image_path).convert('RGB')

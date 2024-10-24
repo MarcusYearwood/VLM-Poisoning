@@ -1,36 +1,17 @@
-import sys
-import argparse
 import os
-import gc
-
-import json
-import shutil
-
-import random
-
-import numpy as np
-import matplotlib.pyplot as plt
-from tqdm import tqdm
 import torch
-from torchvision import transforms
+import argparse
+from tqdm import tqdm
 import torch.optim as optim
 from torchvision.utils import save_image
-from PIL import Image
-import copy
-from torchvision.transforms.functional import InterpolationMode
-import torchvision.transforms.functional as TF
-import torch.nn.functional as F
-from .models import get_image_encoder_llava, encode_image_llava
-from .datasets import collate_fn, SingleTargetPairedImageDataset
-from .utils import load_image, load_image_tensors
+
+from models import get_image_encoder_llava, encode_image_llava, get_image_encoder_internlm, encode_image_internlm
+from datasets import collate_fn, SingleTargetPairedImageDataset
+from poison_utils import load_image, load_image_tensors, L2_norm
 
 # diff augmentation
 # import kornia
 from augmentation_zoo import *
-
-# llava
-from llava.model.builder import load_pretrained_model
-from llava.mm_utils import get_model_name_from_path
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Poisoning")
@@ -52,7 +33,7 @@ def parse_args():
 
     return args
 
-def embedding_attack_Linf(image_encoder, image_base, image_victim, emb_dist, masks, orig_sizes, \
+def embedding_attack_Linf(encode_images, image_base, image_victim, emb_dist, masks, orig_sizes, \
                      iters=100, lr=1/255, eps=8/255, diff_aug=None, resume_X_adv=None):
       '''
       optimizing x_adv to minimize emb_dist( img_embed of x_adv, img_embed of image_victim ) within Lp constraint using PGD
@@ -75,7 +56,7 @@ def embedding_attack_Linf(image_encoder, image_base, image_victim, emb_dist, mas
       device = image_base.device
 
       with torch.no_grad():
-            embedding_targets = image_encoder(normalize(image_victim))
+            embedding_targets = encode_images(image_victim, orig_sizes)
 
       X_adv = image_base.clone().detach() + (torch.rand(*image_base.shape)*2*eps-eps).to(device)
       if resume_X_adv is not None:
@@ -92,7 +73,7 @@ def embedding_attack_Linf(image_encoder, image_base, image_victim, emb_dist, mas
 
       for i in tqdm(range(iters)):
       # for i in range(iters):
-            embs = encode_image_llava(image_encoder, X_adv, image_target, bs, diff_aug)
+            embs = encode_images(X_adv, orig_sizes)
 
             loss = emb_dist(embs, embedding_targets) # length = bs
 
@@ -125,29 +106,12 @@ def embedding_attack_Linf(image_encoder, image_base, image_victim, emb_dist, mas
                   break                 
 
       with torch.no_grad():
-            if diff_aug:
-                  print('Using diff_aug')
-                  X_adv_best_input_to_model = diff_aug(X_adv_best)
-            else:
-                  print('Not using diff_aug')
-                  X_adv_best_input_to_model = X_adv_best
-            embs = encode_image_llava(X_adv_best_input_to_model)
+            embs = encode_images(X_adv_best, orig_sizes)
             loss = emb_dist(embs, embedding_targets)
             # print('Best Total loss vector:{}'.format(loss))
             print('Best Total loss:{:.4f}'.format(loss.mean().item()))
 
       return X_adv_best, loss.detach()
-
-def L2_norm(a,b):
-      '''
-      a,b: batched image/representation tensors
-      '''
-      assert a.size(0) == b.size(0), 'two inputs contain different number of examples'
-      bs = a.size(0)
-
-      dist_vec = (a-b).view(bs,-1).norm(p=2, dim=1)
-
-      return dist_vec
 
 if __name__ == "__main__":
       args = parse_args()
@@ -163,7 +127,9 @@ if __name__ == "__main__":
             
 
       ###### model preparation ######
-      image_encoder, image_processor, diff_aug, img_size = get_image_encoder_llava()
+      image_encoder, image_processor, diff_aug, img_size = get_image_encoder_internlm()
+      encode_images = lambda imgs, orig_sizes: encode_image_internlm(image_encoder, imgs, img_size, args.batch_size, diff_aug, orig_sizes) 
+
       if args.diff_aug_specify is not None:
             diff_aug = get_image_augmentation(augmentation_name=args.diff_aug_specify, image_size=img_size)
       else:
@@ -172,6 +138,7 @@ if __name__ == "__main__":
       ###### data preparation ######
       images_base, image_target = load_image_tensors(args.task_data_pth,img_size)
       dataset_pair = SingleTargetPairedImageDataset(images_base=images_base, image_target=image_target)
+
 
 
       # dataloader_pair = torch.utils.data.DataLoader(dataset_pair, batch_size=args.batch_size, shuffle=False)
@@ -205,7 +172,7 @@ if __name__ == "__main__":
             print('batch_id = ',i)
             image_base, image_victim, masks = image_base.cuda(), image_victim.cuda(), masks.cuda()
             X_adv, loss_attack = embedding_attack_Linf(
-                  image_encoder=image_encoder, image_base=image_base, 
+                  encode_images=encode_images, image_base=image_base, 
                   image_victim=image_victim, emb_dist=L2_norm, 
                   iters=args.iter_attack, lr=args.lr_attack/255, 
                   eps=8/255, diff_aug=diff_aug, resume_X_adv=None, 
@@ -225,10 +192,6 @@ if __name__ == "__main__":
 
       # X_adv = torch.cat(X_adv_list,axis=0)
       loss_attack = torch.cat(loss_attack_list,dim=0)
-
-      # ###### Saving poison data ######
-      # save_poison_data(images_to_save=X_adv.cpu(), caption_pth=os.path.join(args.task_data_pth,'base_train','cap.json'), \
-      #             save_path=args.poison_save_pth)
 
       # sanity check (taking into consideration of loading images and image processor)
     #   test_attack_efficacy(image_encoder=image_encoder, image_processor=image_processor, \

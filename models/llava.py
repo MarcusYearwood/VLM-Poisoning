@@ -8,10 +8,6 @@ from torchvision.transforms.functional import InterpolationMode
 import torchvision.transforms.functional as TF
 import torch.nn.functional as F
 
-# diff augmentation
-# import kornia
-from augmentation_zoo import *
-
 # llava
 from llava.model.builder import load_pretrained_model
 from llava.mm_utils import get_model_name_from_path
@@ -50,11 +46,11 @@ def get_image_encoder_llava():
 
       return image_encoder, image_processor, diff_aug, img_size
 
-def encode_image_llava(image_encoder, x_adv, image_target, bs, diff_aug, orig_sizes, normalize=normalize):
+def encode_image_llava(image_encoder, X_adv, img_size, bs, diff_aug, orig_sizes, normalize=normalize):
     X_adv_resized = torch.cat([
     TF.resize(
             X_adv[j][:, :orig_sizes[j][1], :orig_sizes[j][0]], 
-            (image_target.size(2), image_target.size(3)), 
+            (img_size, img_size), 
             interpolation=InterpolationMode.BICUBIC
             ).unsqueeze(0) for j in range(bs)
     ], dim=0)

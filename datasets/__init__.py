@@ -1,3 +1,7 @@
+import torch.nn.functional as F
+import random
+import torch
+
 class PairedImageDataset(torch.utils.data.Dataset):
     def __init__(self, images_base, images_target):
         '''
@@ -76,3 +80,9 @@ def collate_fn(batch):
         mask = torch.ones(1, max_height, max_width)  # Initialize mask with ones
         mask[:, :h, :w] = 0  # Set original area to 0 (no padding)
         masks.append(mask)
+    
+    images_target = torch.cat(images_target, dim=0)
+    images_base = torch.cat(padded_images_base, dim=0)
+    masks = torch.cat(masks, dim=0)
+
+    return images_base, images_target, masks, original_sizes
