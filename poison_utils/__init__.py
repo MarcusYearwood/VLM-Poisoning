@@ -1,4 +1,5 @@
 import os
+import re
 import torch
 import json
 import shutil
@@ -9,9 +10,17 @@ from torchvision import transforms
 from torchvision.utils import save_image
 from torchvision.transforms.functional import InterpolationMode
 
+def findWholeWord(w):
+    '''
+    Checking if a sentence contains a word (not a substring).
 
+    Example: 
+    findWholeWord('seek')('those who seek shall find') is not None
+    findWholeWord('seek')('those who shall find') is None
+    '''
+    return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
 
-def save_poison_data(images_to_save, caption_pth, save_path):
+def save_poison_data(images_to_save, caption_pth, save_path, orig_sizes):
       '''
       Save the pure poison data set as the same folder format as cc_sbu_align
 
@@ -21,19 +30,26 @@ def save_poison_data(images_to_save, caption_pth, save_path):
       save_path: path for saving poisoned images and original captions. 
       need to save to png, not jpeg.
       '''
-      assert len(images_to_save.size()) == 4, 'images_to_save should be a batch of image tensors, 4 dimension'
+      # assert len(images_to_save.size()) == 4, 'images_to_save should be a batch of image tensors, 4 dimension'
+      assert len(images_to_save[0].size()) == 3, 'images_to_save should be a batch of image tensors, 3 dimension each'
 
       with open(caption_pth) as file:    
             cap = json.load(file)
       num_total = len(cap['annotations'])
-      assert images_to_save.size(0) == num_total, 'numbers of images and captions are different'
+      # assert images_to_save.size(0) == num_total, f'numbers of images and captions are different - images_to_save.size(0): {images_to_save.size(0)} num_total: {num_total}'
+      assert len(images_to_save) == num_total, f'numbers of images and captions are different - images_to_save.size(0): {len(images_to_save)} num_total: {num_total}'
 
       # save image using the original image_id
       for i in range(num_total):
             image_id = cap['annotations'][i]['image_id']
             img_pth = os.path.join(save_path, 'image', '{}.jpg'.format(image_id)) # for mathvista
             # img_pth = os.path.join(save_path, 'image', '{}.png'.format(image_id))
-            save_image(images_to_save[i],img_pth)
+            # save_image(images_to_save[i],img_pth)
+            img = images_to_save[i]
+            idx_1 = orig_sizes[i][1]
+            idx_2 = orig_sizes[i][0]
+            img = img[:, :idx_1, :idx_2].cpu()
+            save_image(images_to_save[i][:, :orig_sizes[i][1], :orig_sizes[i][0]].cpu(), img_pth)
 
             # rename to .jpg
             img_pth_jpg = os.path.join(save_path, 'image', '{}.jpg'.format(image_id))
@@ -55,14 +71,18 @@ def L2_norm(a,b):
 
       return dist_vec
 
-def load_image(image_path, show_image=True):
-    img = Image.open(image_path).convert('RGB')
-    if show_image:
-        plt.imshow(img)
-        plt.show()
-    return img
+def load_image(image_file, show_image=False):
+      if image_file.startswith('http://') or image_file.startswith('https://'):
+            response = requests.get(image_file)
+            image = Image.open(BytesIO(response.content)).convert('RGB')
+      else:
+            image = Image.open(image_file).convert('RGB')
+      if show_image:
+            plt.imshow(image)
+            plt.show()
+      return image
 
-def load_image_tensors(task_data_pth,img_size):
+def load_image_tensors(task_data_pth,img_size,training_mode):
     '''
     Input:
     task_data_pth needs to contain two subfolders: base_train and target_train;
@@ -78,32 +98,80 @@ def load_image_tensors(task_data_pth,img_size):
 
     images_target = []
     images_base = []
+    
+    if training_mode == "paired":
+        resize_fn = transforms.Resize(
+                    (img_size, img_size), interpolation=InterpolationMode.BICUBIC
+                )
 
-#     resize_fn = transforms.Resize(
-#                     (img_size, img_size), interpolation=InterpolationMode.BICUBIC
-#                 )
+        for i in range(num_total):
+              image_id = base_train_cap['annotations'][i]['image_id']
+              image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.png')
+              image_target_pth = os.path.join(task_data_pth, 'target_train', f'{image_id}.png')
 
-    resize_fn = lambda x: x # identity
+              images_base.append(transforms.ToTensor()(resize_fn(load_image(image_base_pth))).unsqueeze(0)) 
+              images_target.append(transforms.ToTensor()(resize_fn(load_image(image_target_pth))).unsqueeze(0)) 
+
+        images_base = torch.cat(images_base, axis=0)
+        images_target = torch.cat(images_target, axis=0)
+        print(f'Finishing loading {num_total} pairs of base and target images for poisoning, size={images_base.size()}')
+
+        return images_base, images_target
+    elif training_mode == "single_target":
+        resize_fn = lambda x: x # identity
+
+        for i in tqdm(range(num_total), desc="Loading image tensors"):
+            image_id = base_train_cap['annotations'][i]['image_id']
+
+            if "MathVista" in task_data_pth:
+                  image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.jpg') #jpg for mathvista
+            else:
+                  image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.png') 
+
+            images_base.append(transforms.ToTensor()(resize_fn(load_image(image_base_pth))).unsqueeze(0)) 
 
 
-    for i in tqdm(range(num_total), desc="Loading image tensors"):
-        image_id = base_train_cap['annotations'][i]['image_id']
-      #   image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.png') 
-        image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.jpg') #jpg for mathvista
-        image_target_pth = os.path.join(task_data_pth, 'target_train', f'{image_id}.png')
+            #   images_target.append(transforms.ToTensor()(resize_fn(load_image(image_target_pth))).unsqueeze(0)) 
 
-        images_base.append(transforms.ToTensor()(resize_fn(load_image(image_base_pth))).unsqueeze(0)) 
+        # mathvista
+        image_target_pth = os.path.join(task_data_pth, 'target_train', '0.png')
+        image_target = transforms.ToTensor()(resize_fn(load_image(image_target_pth))).unsqueeze(0)
+
+        print(f'Finishing loading {num_total} pairs of base and target images for poisoning, size={len(images_base)}')
+
+        return images_base, image_target
+    elif training_mode == "all_target":
+        resize_fn = lambda x: x # identity
+
+        with open(os.path.join(task_data_pth,'target_train','cap.json')) as file:    
+            target_train_cap = json.load(file)
+        num_total_target = len(target_train_cap['annotations'])
+
+        for i in tqdm(range(num_total), desc="Loading image tensors"):
+            image_id = base_train_cap['annotations'][i]['image_id']
+
+            image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.jpg') #jpg for mathvista
+
+            images_base.append(transforms.ToTensor()(resize_fn(load_image(image_base_pth))).unsqueeze(0)) 
+      
+        for i in tqdm(range(num_total_target), desc="Loading image tensors"):
+            image_id = target_train_cap['annotations'][i]['name']
+
+            image_base_pth = os.path.join(task_data_pth, 'target_train', f'{image_id}.png') 
+
+            images_target.append(transforms.ToTensor()(resize_fn(load_image(image_base_pth))).unsqueeze(0)) 
+
+        print(f'Finishing loading {num_total} pairs of base and target images for poisoning, size={len(images_base)}')
+
+        return images_base, images_target, target_train_cap["annotations"]
+    else:
+        raise Exception("Please provide valid training mode")
+
+      
 
 
-      #   images_target.append(transforms.ToTensor()(resize_fn(load_image(image_target_pth))).unsqueeze(0)) 
 
-    # mathvista
-    image_target_pth = os.path.join(task_data_pth, 'target_train', '0.png')
-    image_target = transforms.ToTensor()(resize_fn(load_image(image_target_pth))).unsqueeze(0)
-
-    print(f'Finishing loading {num_total} pairs of base and target images for poisoning, size={len(images_base)}')
-
-    return images_base, image_target
+    
 
 def test_attack_efficacy(image_encoder, image_processor, task_data_pth, poison_data_pth, img_size, sample_num=20):
       '''
@@ -132,8 +200,13 @@ def test_attack_efficacy(image_encoder, image_processor, task_data_pth, poison_d
             image_id = cap['annotations'][i]['image_id']
 
             # image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.png')
-            image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.jpg') # jpg for mathvista
-            image_target_pth = os.path.join(task_data_pth, 'target_train', f'{image_id}.png')
+            if "MathVista" in task_data_pth:
+                  image_target_pth = os.path.join(task_data_pth, 'target_train', f'{0}.png')
+                  image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.jpg') # jpg for mathvista
+            else:
+                  image_base_pth = os.path.join(task_data_pth, 'base_train', f'{image_id}.png') # png for original
+                  image_target_pth = os.path.join(task_data_pth, 'target_train', f'{image_id}.png')
+                  
             image_poison_pth = os.path.join(poison_data_pth, 'image', f'{image_id}.jpg')
 
             images_base.append((load_image(image_base_pth)))
@@ -160,7 +233,7 @@ def test_attack_efficacy(image_encoder, image_processor, task_data_pth, poison_d
 
             dist_base_target_list.append( (emb_base - emb_target).norm().item() )
             dist_poison_target_list.append( (emb_poison - emb_target).norm().item() )
-            pixel_dist_base_poison.append( torch.norm(transforms.ToTensor()(resize_fn(image_base)) - transforms.ToTensor()(image_poison), float('inf')) )
+            pixel_dist_base_poison.append( torch.norm(transforms.ToTensor()(image_base) - transforms.ToTensor()(image_poison), float('inf')) )
 
       dist_base_target_list = torch.Tensor(dist_base_target_list)
       dist_poison_target_list = torch.Tensor(dist_poison_target_list)
@@ -170,5 +243,6 @@ def test_attack_efficacy(image_encoder, image_processor, task_data_pth, poison_d
       print(f'>>> ratio betwen dist_base_target and dist_poison_target:\n{dist_base_target_list/dist_poison_target_list}')
       print(f'ratio mean: {(dist_base_target_list/dist_poison_target_list).mean()}')
       print(f'>>> Max Linf pixel distance * 255 between base and poison: {(pixel_dist_base_poison*255).max()}')
+      print(f'>>> Argmax Linf pixel distance * 255 between base and poison: {torch.argmax(pixel_dist_base_poison*255)}')
 
       return 

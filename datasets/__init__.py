@@ -17,7 +17,7 @@ class PairedImageDataset(torch.utils.data.Dataset):
         return self.images_base.shape[0]
 
     def __getitem__(self, index):
-        return self.images_base[index], self.images_target[index]
+        return self.images_base[index].unsqueeze(0), self.images_target[index].unsqueeze(0)
 
 class RandomPairedImageDataset(torch.utils.data.Dataset):
     def __init__(self, images_base, images_target):
@@ -52,6 +52,21 @@ class SingleTargetPairedImageDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         return self.images_base[index], self.image_target
 
+class ImageDataset(torch.utils.data.Dataset):
+    def __init__(self, images):
+        '''
+        both input image are tensors with (num_example, 3, h, w)
+        This dataset be used to construct dataloader for batching
+        '''
+        super().__init__()
+        self.images = images
+
+    def __len__(self):
+        return len(self.images)
+
+    def __getitem__(self, index):
+        return self.images[index]
+
 def collate_fn(batch):
     # Extract the images from the batch
     images_base, images_target = zip(*batch)
@@ -59,6 +74,7 @@ def collate_fn(batch):
     # Find the maximum height and width in the batch for padding
     max_height = max(img.size(2) for img in images_base)
     max_width = max(img.size(3) for img in images_base)
+
 
     # Create lists to store padded images and masks
     padded_images_base = []
