@@ -36,11 +36,11 @@ def create_test_prompt(demo_prompt, query, response):
     return full_prompt
 
 
-def extract_answer(response, problem, model=None, quick_extract=False):
+def extract_answer(response, problem, target_name, model=None, quick_extract=False):
     question_type = problem['question_type']
     answer_type = problem['answer_type']
     choices = problem['choices']
-    query = problem['query']
+    query = problem[target_name]['query']
     pid = problem['pid']
 
     if response == "":
@@ -136,23 +136,26 @@ if __name__ == '__main__':
             if 'extraction' not in results[pid] or not verify_extraction(results[pid]['extraction']):
                 test_pids.append(pid)
     
+
     test_num = len(test_pids)
     print("Number of problems to run:", test_num)
     # print(test_pids)
 
     # tqdm, enumerate results
     for i, pid in enumerate(tqdm(test_pids)):
-        problem = results[pid]
+        target_names = results[pid]["targets"].keys()
+        for name in target_names:
+            problem = results[pid]
 
-        assert label in problem
-        response = problem[label]       
+            assert label in problem["targets"][name]
+            response = problem["targets"][name][label]       
 
-        
-        # extraction  = extract_answer(response, problem, model, args.quick_extract)
-        extraction  = extract_answer(response, problem, None, args.quick_extract)
-        results[pid]['extraction'] = extraction
+            
+            # extraction  = extract_answer(response, problem, name, model, args.quick_extract)
+            extraction  = extract_answer(response, problem, name, None, args.quick_extract)
+            results[pid]["targets"][name]['extraction'] = extraction
 
-        if i % args.save_every == 0 or i == test_num - 1:
-            print(f"Saving results to {output_file}...")
-            save_json(results, output_file)
-            print(f"Results saved.")
+            if i % args.save_every == 0 or i == test_num - 1:
+                print(f"Saving results to {output_file}...")
+                save_json(results, output_file)
+                print(f"Results saved.")

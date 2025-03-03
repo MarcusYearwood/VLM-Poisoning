@@ -1,6 +1,8 @@
 import torch.nn.functional as F
 import random
 import torch
+import torchvision 
+from PIL import Image
 
 class PairedImageDataset(torch.utils.data.Dataset):
     def __init__(self, images_base, images_target):
@@ -53,22 +55,26 @@ class SingleTargetPairedImageDataset(torch.utils.data.Dataset):
         return self.images_base[index], self.image_target
 
 class ImageDataset(torch.utils.data.Dataset):
-    def __init__(self, images):
+    def __init__(self, image_caps):
         '''
-        both input image are tensors with (num_example, 3, h, w)
-        This dataset be used to construct dataloader for batching
+        image_caps is list of dicts with image paths
         '''
         super().__init__()
-        self.images = images
+        self.image_caps = image_caps
 
     def __len__(self):
-        return len(self.images)
+        return len(self.image_caps)
 
     def __getitem__(self, index):
-        return self.images[index]
+        '''
+        returns torch image with values 0 to 255 with shape (3, height, width)
+        '''
+        with Image.open(self.image_caps[index]["path"]) as img:
+            pil_image = img
+            img_tensor = torchvision.transforms.PILToTensor()(img.convert('RGB'))
+            return img_tensor, self.image_caps[index]
 
 def collate_fn(batch):
-    # Extract the images from the batch
     images_base, images_target = zip(*batch)
 
     # Find the maximum height and width in the batch for padding
@@ -102,3 +108,23 @@ def collate_fn(batch):
     masks = torch.cat(masks, dim=0)
 
     return images_base, images_target, masks, original_sizes
+
+def collate_fn_image(batch):
+    '''
+    returns images of shape (1,3,height,width)
+
+    sample caps element:
+    {
+        "path": "data/mini_MathVista_grid/base/85.jpg",
+        "pid": "0",
+        "name": "85",
+        "caption": "The graph illustrates the average weekly work hours for women aged 15 and older in Romania, Portugal, and Switzerland from 1995 to 2007, showing a noticeable divergence in work hours among these",
+        "description": "The image is a graph titled \"Average usual weekly hours worked, women 15 years and older, 1995 to 2007.\" It illustrates the trends in average weekly work hours for women aged 15 and above in three countries: Romania, Portugal, and Switzerland.\n\n### Key Elements of the Image:\n\n1. **Axes:**\n   - The **horizontal axis** represents the years from 1995 to 2007.\n   - The **vertical axis** shows the average weekly hours worked, measured in increments from 0 to 40 hours.\n\n2. **Lines:**\n   - There are three lines representing each country:\n     - **Romania:** Displayed in **cyan**, this line shows some fluctuations, peaking around "
+    }
+    '''
+    image, caps = zip(*batch)
+    image = torch.stack(image, dim=0)
+    bsz, c, h, w = image.shape
+    assert bsz == 1
+    
+    return image.to(torch.float32), caps[0]

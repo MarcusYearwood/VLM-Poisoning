@@ -6,9 +6,9 @@ from tqdm import tqdm
 import torch.optim as optim
 from torchvision.utils import save_image
 
-from models import get_image_encoder_llava, encode_image_llava, get_llava_model, get_response_llava
-from models import get_image_encoder_internlm, encode_image_internlm, get_internlm_model, get_response_internlm
-from models import encode_image_clip, get_image_encoder_clip
+from training_models import get_image_encoder_llava, encode_image_llava, get_llava_model, get_response_llava
+from training_models import get_image_encoder_internlm, encode_image_internlm, get_internlm_model, get_response_internlm
+from training_models import encode_image_clip, get_image_encoder_clip
 
 from datasets import collate_fn, SingleTargetPairedImageDataset, PairedImageDataset
 from poison_utils import load_image, load_image_tensors, L2_norm, save_poison_data, test_attack_efficacy
