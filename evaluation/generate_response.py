@@ -9,7 +9,7 @@ import sys
 sys.path.append('../')
 from utilities import *
 
-from models import internlm, llava_one_v, internvl
+from eval_models import internlm, llava_one_v, internvl
 # from models import claude, gpt, bard, hugging_face
 
 from build_query import create_query_data
@@ -57,8 +57,9 @@ def evaluate_code(code_string):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     # input
-    parser.add_argument('--data_dir', type=str, default='../data')
+    parser.add_argument('--poison_data_dir', type=str, default='../data')
     parser.add_argument('--input_file', type=str, default='testmini.json')
+    parser.add_argument('--task_data_pth', type=str, default=None)
     # output
     parser.add_argument('--output_dir', type=str, default='../results/bard')
     parser.add_argument('--output_file', type=str, default='output_bard.json')
@@ -81,12 +82,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # load data
-    input_file = os.path.join(args.data_dir, args.input_file)
+    input_file = os.path.join(args.task_data_pth, args.input_file)
     print(f"Reading {input_file}...")
     data = read_json(input_file)
     # load or create query data
     if args.query_file:
-        query_file = os.path.join(args.data_dir, args.query_file)
+        query_file = os.path.join(args.task_data_pth, args.query_file)
         if os.path.exists(query_file):
             print(f"Loading existing {query_file}...")
             query_data = read_json(query_file)
@@ -168,57 +169,76 @@ if __name__ == '__main__':
     test_pids = list(data.keys())
     print("\nNumber of test problems in total:", len(test_pids))
 
+    available_directories = [d for d in os.listdir(args.poison_data_dir) if os.path.isdir(os.path.join(args.poison_data_dir, d))]
+    target_names = read_json(os.path.join(args.task_data_pth, "target_train/cap.json"))
+    if not all([name in available_directories for name in target_names]):
+        print("Not all targets have directories. Working with:", available_directories)
+    target_names = [item["name"] for item in target_names["annotations"] if item["name"] in available_directories]
+
     skip_pids = []
     if not args.rerun:
         print("\nRemoving problems with existing valid response...")
-        for pid in test_pids:
-            # print(f"Checking {pid}...")
-            if pid in results and 'response' in results[pid]:
-                response = results[pid]['response']
-                if verify_response(response):
-                    # print(f"Valid response found for {pid}.")
-                    skip_pids.append(pid)
+        for i, name in enumerate(target_names):
+            skip_pids.append([])
+            for pid in test_pids:
+                # print(f"Checking {pid}...")
+                if pid in results and 'response' in results[pid]:
+                    response = results[pid][name]['response']
+                    if verify_response(response):
+                        # print(f"Valid response found for {pid}.")
+                        skip_pids[i].append(pid)
     else:
         print("\nRerun answer extraction for all problems...")
 
-    test_pids = [pid for pid in test_pids if pid not in skip_pids]
-    print("Number of test problems to run:", len(test_pids))
+    test_pids = [[pid for pid in test_pids if pid not in target_skip_pids] for target_skip_pids in skip_pids]
+    print("Number of test problems to run for each target:", {target_names[i]: len(target_pids) for i, target_pids in enumerate(test_pids)})
     # print(test_pids)
 
-    # tqdm, enumerate results
-    for _, pid in enumerate(tqdm(test_pids)):
-        problem = data[pid]
-        query = query_data[pid]
-        image = problem['image']
-        image_path = os.path.join(args.data_dir, image)
-
-        if args.debug:
-            print("--------------------------------------------------------------")
-        print(f"\nGenerating response for {pid}...")
-        try:
-            response = model.get_response(image_path, query)
-            # print(f"Response: {response}")
-            results[pid] = problem
-            results[pid]['query'] = query
-            if args.shot_type == 'solution':
-                results[pid]['response'] = response
-            else:
-                output, error = evaluate_code(response)
-                results[pid]['response'] = response
-                results[pid]['execution'] = output
-                results[pid]['error'] = str(error)
-            if args.debug:
-                print(f"\n#Query: \n{query}")
-                print(f"\n#Response: \n{response}")
-        except Exception as e:
-            print(e)
-            print(f"Error in extracting answer for {pid}")
-            results[pid]['error'] = e
     
-        try:
-            print(f"Saving results to {output_file}...")
-            save_json(results, output_file)
-            print(f"Results saved.")
-        except Exception as e:
-            print(e)
-            print(f"Error in saving {output_file}")
+
+    # tqdm, enumerate results
+    for i, target_name in enumerate(target_names):
+        for _, pid in enumerate(tqdm(test_pids[i])):
+            problem = data[pid]
+            query = query_data[pid]
+            image = problem['image']
+            image_path = os.path.join(args.poison_data_dir, target_name, image)
+
+            if args.debug:
+                print("--------------------------------------------------------------")
+            print(f"\nGenerating response for {pid}...")
+            try:
+                response = model.get_response(image_path, query)
+                new_caption = model.get_response(image_path, "describe what is in this image")
+                # print(f"Response: {response}")
+                if pid not in results:
+                    results[pid] = problem
+                if "targets" not in results[pid]:
+                    results[pid]["targets"] = {}
+                if target_name not in results[pid]["targets"]:
+                    results[pid]["targets"][target_name] = {}
+
+                results[pid]["targets"][target_name]['query'] = query
+                results[pid]["targets"][target_name]['model_description'] = new_caption
+                if args.shot_type == 'solution':
+                    results[pid]["targets"][target_name]['response'] = response
+                else:
+                    output, error = evaluate_code(response)
+                    results[pid]["targets"][target_name]['response'] = response
+                    results[pid]["targets"][target_name]['execution'] = output
+                    results[pid]["targets"][target_name]['error'] = str(error)
+                if args.debug:
+                    print(f"\n#Query: \n{query}")
+                    print(f"\n#Response: \n{response}")
+            except Exception as e:
+                print(e)
+                print(f"Error in extracting answer for {pid}")
+                results[pid][target_name]['error'] = e
+        
+            try:
+                print(f"Saving results to {output_file}...")
+                save_json(results, output_file)
+                print(f"Results saved.")
+            except Exception as e:
+                print(e)
+                print(f"Error in saving {output_file}")
