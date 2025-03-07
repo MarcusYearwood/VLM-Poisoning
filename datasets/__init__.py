@@ -3,6 +3,7 @@ import random
 import torch
 import torchvision 
 from PIL import Image
+import numpy as np
 
 class PairedImageDataset(torch.utils.data.Dataset):
     def __init__(self, images_base, images_target):
@@ -74,6 +75,7 @@ class ImageDataset(torch.utils.data.Dataset):
             img_tensor = torchvision.transforms.PILToTensor()(img.convert('RGB'))
             return img_tensor, self.image_caps[index]
 
+
 def collate_fn(batch):
     images_base, images_target = zip(*batch)
 
@@ -128,3 +130,41 @@ def collate_fn_image(batch):
     assert bsz == 1
     
     return image.to(torch.float32), caps[0]
+
+transform_fn = torchvision.transforms.Compose(
+        [
+            torchvision.transforms.Resize(224, interpolation=torchvision.transforms.InterpolationMode.BICUBIC),
+            torchvision.transforms.CenterCrop(224),
+            torchvision.transforms.Lambda(lambda img: img.convert("RGB")),
+            torchvision.transforms.Lambda(lambda img: to_tensor(img)),
+            torchvision.transforms.Lambda(lambda img: torch.clamp(img, 0.0, 255.0) / 255.0),
+        ]
+    )
+
+def to_tensor(pic):
+    mode_to_nptype = {"I": np.int32, "I;16": np.int16, "F": np.float32}
+    img = torch.from_numpy(np.array(pic, mode_to_nptype.get(pic.mode, np.uint8), copy=True))
+    img = img.view(pic.size[1], pic.size[0], len(pic.getbands()))
+    img = img.permute((2, 0, 1)).contiguous()
+    return img.to(dtype=torch.get_default_dtype())
+
+class EnsembleImageDataset(torch.utils.data.Dataset):
+    def __init__(self, image_caps):
+        '''
+        image_caps is list of dicts with image paths
+        '''
+        super().__init__()
+        self.image_caps = image_caps
+
+    def __len__(self):
+        return len(self.image_caps)
+
+    def __getitem__(self, index):
+        '''
+        returns torch image with values 0 to 255 with shape (3, height, width)
+        '''
+        with Image.open(self.image_caps[index]["path"]) as img:
+            pil_image = img
+            # img_tensor = torchvision.transforms.PILToTensor()(img.convert('RGB'))
+            img_tensor = transform_fn(img.convert('RGB'))
+            return img_tensor, self.image_caps[index]
