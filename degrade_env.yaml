@@ -1,0 +1,25 @@
+name: degrade
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - torchvision
+  - pytorch
+  - tqdm
+  - pillow
+  - matplotlib
+  - torchvision
+  - accelerate
+  - transformers
+  - bitsandbytes
+  - parallelformers
+  - word2number
+  - openai
+  - ipykernel
+  - pip:
+      - opencv-python

@@ -1,4 +1,4 @@
-<h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;"> <em>Shadowcast</em>: Stealthy Data Poisoning Attacks <br>Against Vision-Language Models </h1>
+<h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;"> <em>DEGRADE</em> – Deep Ensembled Gradient-based Regression Attack for Dataset Evasion <br>Against Vision-Language Models </h1>
 <p align='center' style="text-align:center;font-size:1.25em;">
     <a href="https://yuancheng-xu.github.io" target="_blank" style="text-decoration: none;">Yuancheng Xu</a><sup>1</sup>&nbsp;,&nbsp;
     <a target="_blank" style="text-decoration: none;">Jiarui Yao</a><sup>2</sup>&nbsp;,&nbsp;
