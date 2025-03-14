@@ -16,10 +16,10 @@ dependencies:
   - torchvision
   - accelerate
   - transformers
-  - bitsandbytes
-  - parallelformers
   - word2number
   - openai
   - ipykernel
   - pip:
       - opencv-python
+      - parallelformers
+      - bitsandbytes
