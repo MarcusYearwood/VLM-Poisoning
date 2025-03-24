@@ -1,0 +1,404 @@
+{
+    "annotations": [
+        {
+            "image_id": "1",
+            "caption": "A collage of photos showing different parts of a building."
+        },
+        {
+            "image_id": "2",
+            "caption": "A blender filled with food on top of a counter."
+        },
+        {
+            "image_id": "3",
+            "caption": "A black and white photo of a black and white clock."
+        },
+        {
+            "image_id": "4",
+            "caption": "A table topped with a ball and a toy."
+        },
+        {
+            "image_id": "5",
+            "caption": "A close up picture of a clock on a wall."
+        },
+        {
+            "image_id": "6",
+            "caption": "A pair of black and white scissors on a table."
+        },
+        {
+            "image_id": "7",
+            "caption": "A clock on the side of a wall."
+        },
+        {
+            "image_id": "8",
+            "caption": "A toy motorcycle with a bunch of toys on top of it."
+        },
+        {
+            "image_id": "9",
+            "caption": "A black and white photo of two pieces of paper."
+        },
+        {
+            "image_id": "10",
+            "caption": "A number of numbers on a white background."
+        },
+        {
+            "image_id": "11",
+            "caption": "A table topped with a bunch of different colored balls."
+        },
+        {
+            "image_id": "12",
+            "caption": "A bicycle with a green bicycle handle attached to it."
+        },
+        {
+            "image_id": "13",
+            "caption": "A collage of photos showing different types of electronic devices."
+        },
+        {
+            "image_id": "14",
+            "caption": "A toy robot is sitting on top of a table."
+        },
+        {
+            "image_id": "15",
+            "caption": "A collage of photos of a train on a track."
+        },
+        {
+            "image_id": "16",
+            "caption": "A collage of images showing a baseball game."
+        },
+        {
+            "image_id": "17",
+            "caption": "A clock that is on top of a piece of wood."
+        },
+        {
+            "image_id": "18",
+            "caption": "A man riding skis down a snow covered slope."
+        },
+        {
+            "image_id": "19",
+            "caption": "A glass vase filled with lots of different colored liquid."
+        },
+        {
+            "image_id": "20",
+            "caption": "A collage of photos of various types of electronic devices."
+        },
+        {
+            "image_id": "21",
+            "caption": "A series of three images of a white and blue wall."
+        },
+        {
+            "image_id": "22",
+            "caption": "A man and a woman standing next to each other."
+        },
+        {
+            "image_id": "23",
+            "caption": "A collage of photos of a man on a bicycle."
+        },
+        {
+            "image_id": "24",
+            "caption": "A series of photos showing different types of objects."
+        },
+        {
+            "image_id": "25",
+            "caption": "A collage of photos of a person on a cell phone."
+        },
+        {
+            "image_id": "26",
+            "caption": "A series of photos showing different types of objects."
+        },
+        {
+            "image_id": "27",
+            "caption": "Two men standing next to each other in front of a wall."
+        },
+        {
+            "image_id": "28",
+            "caption": "A black and white photo of a clock."
+        },
+        {
+            "image_id": "29",
+            "caption": "A large window with a picture of a saint on it."
+        },
+        {
+            "image_id": "30",
+            "caption": "A clock that is on top of a table."
+        },
+        {
+            "image_id": "31",
+            "caption": "A toy elephant is sitting on top of a table."
+        },
+        {
+            "image_id": "32",
+            "caption": "A black and white photo of a white wall and a black and white photo of a white wall and a black and white photo of a white wall and a black and white photo of a white wall and a black and white photo of a white wall and a black and white photo of a white wall and a black and."
+        },
+        {
+            "image_id": "33",
+            "caption": "A black and white photo of a drawing of a clock."
+        },
+        {
+            "image_id": "34",
+            "caption": "A black and white photo of a clock on a table."
+        },
+        {
+            "image_id": "35",
+            "caption": "A black and white photo of a clock."
+        },
+        {
+            "image_id": "36",
+            "caption": "A man standing next to a man wearing a crown."
+        },
+        {
+            "image_id": "37",
+            "caption": "A black and white photo of a bird flying through the air."
+        },
+        {
+            "image_id": "38",
+            "caption": "A blue and white chess board with numbers on it."
+        },
+        {
+            "image_id": "39",
+            "caption": "A black and white photo of a person holding a toothbrush."
+        },
+        {
+            "image_id": "40",
+            "caption": "A table topped with different types of toys."
+        },
+        {
+            "image_id": "41",
+            "caption": "Two men standing next to each other in front of a flag."
+        },
+        {
+            "image_id": "42",
+            "caption": "A man and a woman posing for a picture."
+        },
+        {
+            "image_id": "43",
+            "caption": "A series of photographs showing a variety of colorful objects."
+        },
+        {
+            "image_id": "44",
+            "caption": "A collage of images showing a person wearing a blue shirt."
+        },
+        {
+            "image_id": "45",
+            "caption": "A blue and white sign with a picture of a cat on it."
+        },
+        {
+            "image_id": "46",
+            "caption": "A collage of photos with different types of animals on them."
+        },
+        {
+            "image_id": "47",
+            "caption": "A toy fire hydrant sitting on top of a table."
+        },
+        {
+            "image_id": "48",
+            "caption": "A blue and white photo of a clock on a wall."
+        },
+        {
+            "image_id": "49",
+            "caption": "Two young men standing next to each other."
+        },
+        {
+            "image_id": "50",
+            "caption": "A collage of photos of a penguin on a surfboard."
+        },
+        {
+            "image_id": "51",
+            "caption": "A toy robot is sitting on top of a table."
+        },
+        {
+            "image_id": "52",
+            "caption": "A table topped with different types of objects."
+        },
+        {
+            "image_id": "53",
+            "caption": "A man and a woman standing next to each other."
+        },
+        {
+            "image_id": "54",
+            "caption": "An aerial view of a clock on a wall."
+        },
+        {
+            "image_id": "55",
+            "caption": "A clock that is on top of a wall."
+        },
+        {
+            "image_id": "56",
+            "caption": "A close up view of a map of the world."
+        },
+        {
+            "image_id": "57",
+            "caption": "A table topped with two pieces of paper and a toy."
+        },
+        {
+            "image_id": "58",
+            "caption": "A series of photos showing a person wearing a blue and white striped tie."
+        },
+        {
+            "image_id": "59",
+            "caption": "A black and white photo of a black and white vase."
+        },
+        {
+            "image_id": "60",
+            "caption": "A man in a suit and a woman in a dress."
+        },
+        {
+            "image_id": "61",
+            "caption": "A series of photos showing different types of electronic devices."
+        },
+        {
+            "image_id": "62",
+            "caption": "A black and white photo of a rope hanging from a wall."
+        },
+        {
+            "image_id": "63",
+            "caption": "A toy elephant sitting on top of a table."
+        },
+        {
+            "image_id": "64",
+            "caption": "A series of three pictures showing different types of remote controls."
+        },
+        {
+            "image_id": "65",
+            "caption": "A pair of scissors on top of a piece of paper."
+        },
+        {
+            "image_id": "66",
+            "caption": "A series of photographs showing different types of objects."
+        },
+        {
+            "image_id": "67",
+            "caption": "A green and white photo of a green and white photo of a green and white photo."
+        },
+        {
+            "image_id": "68",
+            "caption": "A pair of scissors hanging from a rope."
+        },
+        {
+            "image_id": "69",
+            "caption": "A wooden table topped with different types of objects."
+        },
+        {
+            "image_id": "70",
+            "caption": "A man and a woman standing next to each other."
+        },
+        {
+            "image_id": "71",
+            "caption": "A blue and white photo of a clock on a wall."
+        },
+        {
+            "image_id": "72",
+            "caption": "A close up picture of some numbers on a sign."
+        },
+        {
+            "image_id": "73",
+            "caption": "A series of photos showing different types of electronic devices."
+        },
+        {
+            "image_id": "74",
+            "caption": "A series of photos showing different types of items."
+        },
+        {
+            "image_id": "75",
+            "caption": "A collage of photos of a person's face."
+        },
+        {
+            "image_id": "76",
+            "caption": "A collage of photos showing different types of food."
+        },
+        {
+            "image_id": "77",
+            "caption": "A collage of images of a person on a computer."
+        },
+        {
+            "image_id": "78",
+            "caption": "A black and white photo of a keyboard."
+        },
+        {
+            "image_id": "79",
+            "caption": "An old photo of a person standing in front of a clock."
+        },
+        {
+            "image_id": "80",
+            "caption": "A collage of photos showing a cartoon character and a toy train."
+        },
+        {
+            "image_id": "81",
+            "caption": "A blue and white photo of a blue and white clock."
+        },
+        {
+            "image_id": "82",
+            "caption": "A black and white photo of a black and white object."
+        },
+        {
+            "image_id": "83",
+            "caption": "A toy train is sitting on top of a table."
+        },
+        {
+            "image_id": "84",
+            "caption": "A green and white drawing of a clock on a table."
+        },
+        {
+            "image_id": "85",
+            "caption": "A collage of photos showing different types of electronic devices."
+        },
+        {
+            "image_id": "86",
+            "caption": "A collage of photos of a person holding a remote."
+        },
+        {
+            "image_id": "87",
+            "caption": "A screen shot of a baseball game with the word \"baltimore\" written on it."
+        },
+        {
+            "image_id": "88",
+            "caption": "An aerial view of an aerial view of an airplane."
+        },
+        {
+            "image_id": "89",
+            "caption": "A city street filled with lots of traffic."
+        },
+        {
+            "image_id": "90",
+            "caption": "A table topped with lots of different colored cupcakes."
+        },
+        {
+            "image_id": "91",
+            "caption": "A toy bicycle is sitting on top of a table."
+        },
+        {
+            "image_id": "92",
+            "caption": "A bathroom with a tub and a window."
+        },
+        {
+            "image_id": "93",
+            "caption": "A collage of photos showing different types of computers."
+        },
+        {
+            "image_id": "94",
+            "caption": "A black and white photo of a rope hanging from a rope."
+        },
+        {
+            "image_id": "95",
+            "caption": "A clock that is on top of a wall."
+        },
+        {
+            "image_id": "96",
+            "caption": "A painting of a person on a map."
+        },
+        {
+            "image_id": "97",
+            "caption": "A blue and white photo of a person on a blue and white board."
+        },
+        {
+            "image_id": "98",
+            "caption": "A collage of photos with a cartoon character on them."
+        },
+        {
+            "image_id": "99",
+            "caption": "A girl in a dress playing with a toy."
+        },
+        {
+            "image_id": "100",
+            "caption": "A number of different types of electronic devices on a table."
+        }
+    ]
+}
