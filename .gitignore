@@ -84,7 +84,7 @@ docs/_build/
 
 # PyBuilder
 .pybuilder/
-target/
+# target/
 
 # Jupyter Notebook
 # .ipynb_checkpoints
@@ -179,7 +179,8 @@ jobs/logs/
 # *.sh
 .ipynb_common
 logs/
-prompts/
+# results/
+# prompts/
 output/
 ckpt/
 divide_vqa.py
