@@ -1,0 +1,12 @@
+args = {
+    "model": "clip",
+    "poison_save_pth": f"./data/poisons/{dataset_name}",
+    "iter_attack": 500,
+    "lr_attack": 1,
+    "base_data_pth": f"data/{dataset_name}/base",
+    "target_data_pth": f"data/{dataset_name}/target",
+    "questions_pth": f"data/{dataset_name}/questions.json",
+    "temperature": 0,
+    "max_new_tokens": 200,
+    "eps": 16,
+}

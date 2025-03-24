@@ -1,0 +1,704 @@
+{
+    "annotations": [
+        {
+            "path": "data/mini_MathVista_grid/base/85.jpg",
+            "pid": "0",
+            "name": "85",
+            "caption": "The graph illustrates the average weekly work hours for women aged 15 and older in Romania, Portugal, and Switzerland from 1995 to 2007, showing a noticeable divergence in work hours among these",
+            "description": "The image is a graph titled \"Average usual weekly hours worked, women 15 years and older, 1995 to 2007.\" It illustrates the trends in average weekly work hours for women aged 15 and above in three countries: Romania, Portugal, and Switzerland.\n\n### Key Elements of the Image:\n\n1. **Axes:**\n   - The **horizontal axis** represents the years from 1995 to 2007.\n   - The **vertical axis** shows the average weekly hours worked, measured in increments from 0 to 40 hours.\n\n2. **Lines:**\n   - There are three lines representing each country:\n     - **Romania:** Displayed in **cyan**, this line shows some fluctuations, peaking around "
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/54.jpg",
+            "pid": "1",
+            "name": "54",
+            "caption": "The image presents a math problem involving a line segment divided into points A, B, and C, alongside a question about the ratio of the lengths of segments AB and AC given that AC equals 25",
+            "description": "The image contains a mathematical problem presented on a white background. \n\nKey elements include:\n\n1. **Line Segment**: A horizontal line marked with points labeled A, B, and C. The line represents the segment AC, with point B located between A and C.\n\n2. **Labeling**: A, B, and C are the only labels, placed directly above the respective points on the line.\n\n3. **Math Problem**: Below the line, there's a mathematical question stating that the ratio of the length of segment \\( \\overline{AB} \\) to segment \\( \\overline{AC} \\) is \\( 2 : 5 \\). It specifies that segment \\( AC = 25 \\) and asks for the"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/28.jpg",
+            "pid": "2",
+            "name": "28",
+            "caption": "The image depicts a circle with points A, B, and C; line segment AB is a chord, and point C connects to the center of the circle, forming a triangle within the circle.",
+            "description": "The image depicts a geometric diagram centered around a circle. \n\n**Key objects:**\n- **Circle**: The primary shape in the image, represented by a smooth outline with no colors, indicating a perfect circle.\n- **Points**: \n  - Point **A** and Point **B** are positioned on the circumference of the circle. They are connected by a straight line segment.\n  - Point **C** is located inside the circle and is also connected to points A and B, forming a triangle.\n- **Center Point**: A small black dot is placed at the center of the circle, likely representing the circle\u2019s center.\n\n**Colors:**\n- The circle and the line segments are depicted in black against a plain white background,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/82.jpg",
+            "pid": "3",
+            "name": "82",
+            "caption": "The image features a circle containing a centered dot, with a diamond shape inscribed within it, creating a geometric design with intersecting lines.",
+            "description": "The image depicts a geometric configuration featuring a large circle and an inscribed square (diamond shape). Here\u2019s a detailed breakdown:\n\n- **Shape and Structure**: The dominant shape is a black circle, which contains an inner white square rotated 45 degrees, giving it the appearance of a diamond. \n\n- **Inner Elements**: In the center of the inner square, there is a small solid black dot. \n\n- **Lines**: The edges of the square touch the circumference of the circle at four distinct points, creating a harmonious balance between the two shapes.\n\n- **Color Palette**: The circle is outlined in black, contrasting with the white interior of the square. The small dot at the center provides an additional visual anchor.\n\n- **Overall"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/53.jpg",
+            "pid": "4",
+            "name": "53",
+            "caption": "In a tense moment, a man gazes intently at a woman who stands with a serious expression, their contrasting emotions suggesting an impending conflict or dramatic revelation.",
+            "description": "The image depicts a tense moment between two characters in an interior setting. The background showcases a richly decorated room, with deep red curtains and hints of wood elements, suggesting a vintage or classic aesthetic.\n\nIn the foreground, a man and a woman are engaged in a dialogue. The man, with short, tousled blonde hair, wears a dark red shirt that has a relaxed, unbuttoned look. He stands slightly behind the woman, positioning himself as if he is deeply focused on her, displaying an expression of concern or conflict.\n\nThe woman, facing forward, has long dark hair and wears a light, somewhat loose-fitting white shirt. Her facial expression is serious and contemplative, suggesting that she is grappling with a significant issue. She appears to"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/21.jpg",
+            "pid": "5",
+            "name": "21",
+            "caption": "The image features two circular shapes, each containing two blue circles arranged vertically within them.",
+            "description": "The image features two circular outlines, each containing smaller circles situated within them. \n\n### Key Objects:\n- **Circles**: There are two large circles that are nearly identical in size, framed in a light gray outline.\n- **Smaller Circles**: Inside each large circle, there are smaller blue circles. \n\n### Colors:\n- **Background**: The background is likely white, emphasizing the blue and gray colors of the circles.\n- **Large Circles**: The outer circles are outlined in a light gray shade.\n- **Smaller Circles**: The two small circles in each large circle are identical in hue, displaying a bright blue color.\n\n### Actions:\n- There are no specific actions taking place in the image, as"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/26.jpg",
+            "pid": "6",
+            "name": "26",
+            "caption": "The image presents a horizontal bar chart illustrating the proportions of various colors, with \"Deep Pink\" having the most extensive representation, followed by \"Yellow\" and \"Dark Periwinkle.\"",
+            "description": "The image presents a horizontal bar chart with colored bars representing different categories of colors along the y-axis, labeled with their respective names. The colors of the bars range from a deep purple labeled \"Dark Periwinkle\" at the top, to a bright, eye-catching pink labeled \"Deep Pink\" at the bottom.\n\n### Key Elements:\n\n- **Y-Axis Labels**: Each color is listed on the left side of the chart. The colors include:\n  - Dark Periwinkle (purple)\n  - Yellow (bright yellow)\n  - Olive Drab (greenish)\n  - Deep Sky Blue (blue)\n  - Black (black)\n  - Deep Pink (vivid pink)\n\n- **Bar Lengths**: The length of each"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/5.jpg",
+            "pid": "7",
+            "name": "5",
+            "caption": "The image depicts a geometric figure, likely a polygon, labeled with angles expressed in terms of a variable \\( x \\), highlighting the relationships between the angle measures at various vertices.",
+            "description": "The image depicts a geometric shape, specifically a polygon that resembles a trapezium or quadrilateral with the vertices labeled as \\( E, F, G, H, \\) and \\( J \\). The outline of the shape is colored in blue and consists of five sides. \n\nInside the shape, there are angle measures expressed as algebraic expressions attached to the angles formed at each vertex:\n\n- At vertex \\( F \\), the angle is labeled as \\( (x + 20)^\\circ \\).\n- At vertex \\( G \\), the angle is labeled as \\( (x + 5)^\\circ \\).\n- At vertex \\( H \\), the angle is labeled simply as \\( (x - 5)^\\circ \\).\n- At"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/13.jpg",
+            "pid": "8",
+            "name": "13",
+            "caption": "The image presents a bar graph illustrating the percentage of people who prefer different objects categorized by three themes: racing (blue), afraid (orange), and grease (green), across six distinct objects: ditch,",
+            "description": "The image presents a bar chart titled \"Most Preferred Objects of Different Categories.\" \n\n### Key Elements:\n- **Axes**: \n  - The **y-axis** represents the \"Percent of People\" and ranges from 0 to 100.\n  - The **x-axis** lists different objects categorized as \"ditch,\" \"want,\" \"homer,\" \"slide,\" \"mare,\" and \"rebel.\"\n\n### Colors:\n- Each object is associated with a specific color representing a category:\n  - **Blue** bars indicate the \"racing\" category.\n  - **Orange** bars represent the \"afraid\" category.\n  - **Green** bars depict the \"grease\" category.\n\n### Actions:\n- The bars vary in height,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/14.jpg",
+            "pid": "9",
+            "name": "14",
+            "caption": "A collection of colorful miniature vehicles, including cars, motorcycles, and bicycles, is arranged artistically on a neutral background.",
+            "description": "The image depicts a collection of miniature vehicles arranged on a smooth, gray background. The scene features a blend of various types of vehicles, each with vibrant and metallic colors, creating a striking visual effect.\n\n1. **Key Objects**:\n   - **Minivan**: A larger vehicle toward the center, colored a glossy blue with shiny highlights. It has a sleek, modern design, and its wheels are also a reflective blue.\n   - **Sedan**: Positioned to the right, this car is a vivid red with metallic sheen, showcasing defined contours. It has a rectangular shape and is slightly angled.\n   - **Motorcycles**: There are two motorcycles, one in pastel pink and the other in a bright greenish hue. They possess"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/68.jpg",
+            "pid": "10",
+            "name": "68",
+            "caption": "The image depicts a geometric configuration with points A, B, C, and D, where line segments connect A to D and B to D, with point C located on the line segment AB, indicated",
+            "description": "The image depicts a geometric diagram involving points and lines. Here\u2019s a detailed description of the elements within the image:\n\n1. **Points**: \n   - There are four labeled points: A, B, C, and D. \n   - Point D is positioned above the line segment connecting points A and B. \n   - Points A and B are located at either end of a horizontal line.\n\n2. **Lines**:\n   - A solid line connects points A and D, sloping upwards from A to D.\n   - Another solid line connects point D downward to point C, which is situated directly beneath point D.\n   - A dashed line connects points C and B, indicating that C is between A and B on this horizontal line"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/2.jpg",
+            "pid": "11",
+            "name": "2",
+            "caption": "A bowl of flour sits beside a measuring cup filled with flour, alongside a carton of brown eggs on a wooden cutting board in a cozy kitchen setting.",
+            "description": "The image presents a kitchen scene focused on baking preparations. \n\n### Key Objects:\n1. **Large Glass Bowl:** In the foreground, there is a large, transparent glass bowl filled with flour. The flour appears to be heaped in the center, indicating it has just been measured.\n2. **Egg Carton:** Behind the bowl, there is an open carton containing several brown eggs, sitting on a countertop. The eggs are neatly arranged within the carton.\n3. **Measuring Jug:** To the right of the bowl, a clear measuring jug is visible. It contains a similar flour substance, likely to be used for measurement. The jug has marked measurements on its side, indicating quantities in grams and liters, providing a practical reference for the baker"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/66.jpg",
+            "pid": "12",
+            "name": "66",
+            "caption": "The image displays a grid of partially filled shapes, each segmented into sections, with a question mark indicating the missing piece, alongside several answer options labeled A to F for selection.",
+            "description": "The image consists of a grid containing nine geometric shapes arranged in three rows and three columns. Each shape resembles an octagon divided into eight equal sections. The sections alternate in color: some are outlined in black, while others are filled with a bright yellow hue.\n\nIn the upper portion of the grid, the first, third, sixth, and eighth shapes feature specific yellow sections highlighted in different orientations, while the remaining shapes vary in the arrangement of yellow segments. One shape in the grid is marked with a question mark, indicating that it is missing or requires identification based on the patterns established by the other shapes.\n\nBelow the grid, there are six options labeled A through F, each presenting an octagonal shape with varying configurations of yellow segments. These options serve"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/61.jpg",
+            "pid": "13",
+            "name": "61",
+            "caption": "The graph displays two sets of data points, with purple circles representing one variable that increases steadily while the coral circles depict another variable that decreases, alongside their respective labels on the axes.",
+            "description": "The image is a scatter plot featuring two distinct datasets represented by different colored markers. \n\n### Description:\n\n- **Axes**: \n  - The **x-axis** is labeled \"xaxis_label\" and runs horizontally, with values ranging from 0 to 100.\n  - The **y-axis** is labeled \"yaxis_label\" and runs vertically, with values ranging roughly from 32 to 40.\n\n- **Data Points**:\n  - There are two series of data points:\n    - **Purple Dots**: These are represented by large, solid circular markers that display a gradual increase in y-values as x-values increase, peaking around 40.\n    - **Coral Dots**: These are represented by smaller,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/70.jpg",
+            "pid": "14",
+            "name": "70",
+            "caption": "A glamorous woman in a dark fur coat gazes thoughtfully into the distance, while a well-dressed man beside her appears pensive, both captured in a moment of contemplation.",
+            "description": "The image features a couple sitting close together, engaged in an event or gathering. \n\n### Key Objects:\n- **Attire**: The woman is dressed in a classic, elegant outfit, likely with a luxurious fur coat, complemented by stylish gloves. The man is wearing a formal suit, possibly in shades of gray, with a patterned tie that adds a touch of sophistication.\n  \n### Colors:\n- The overall tone of the image is monochrome, emphasizing shadows and highlights. The woman's light-colored hair stands out against the darker backdrop, while the textures of their clothing provide visual interest.\n\n### Actions:\n- The woman appears to be gazing towards something off-camera, her face exhibiting a mix of curiosity and contemplation. Her posture, with one hand resting"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/77.jpg",
+            "pid": "15",
+            "name": "77",
+            "caption": "The graph illustrates the trend in life expectancy at birth for males and females from 2009 to 2019, showing a steady increase for both sexes, with females consistently having a higher life expectancy than",
+            "description": "The image is a line graph depicting the life expectancy at birth across specific years from 2009 to 2019 for females and males. \n\n### Key Elements:\n\n- **Axes**: \n  - The vertical (Y) axis represents life expectancy in years, ranging from approximately 68 to 80 years.\n  - The horizontal (X) axis lists the years from 2009 to 2019.\n\n- **Lines**: \n  - There are two lines representing different genders:\n    - **Female**: This line is colored blue and shows a steady increase in life expectancy, starting from about 74.29 years in 2009 to 77.84 years in 2019.\n    - **Male**: This line"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/79.jpg",
+            "pid": "16",
+            "name": "79",
+            "caption": "The image illustrates a triangle ABC inscribed in a circle, with point O as the center and DE extending from point D on the circumference to point E outside the circle.",
+            "description": "The image depicts a geometric diagram involving a circle and a triangle inscribed within it. Here\u2019s a detailed description:\n\n- **Circle**: The primary shape is a large circle, outlined in black.\n- **Triangle**: Inside the circle, there is a triangle labeled \\( ABC \\). The vertices of the triangle are marked as points \\( A \\), \\( B \\), and \\( C \\), which connect through straight lines.\n- **Points**:\n  - The center of the circle is indicated by a small dot labeled \\( O \\).\n  - A line segment emerges from point \\( A \\) to a point \\( D \\) on the circumference of the circle, continuing further to point \\( E \\) which is outside the circle.\n-"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/37.jpg",
+            "pid": "17",
+            "name": "37",
+            "caption": "The graph depicts a function \\( g(x) \\) showing a continuous curve with a closed dot indicating a point of defined value and an open dot suggesting a discontinuity or undefined value at that specific point",
+            "description": "The image is a graph of a function \\( g(x) \\) depicted on a Cartesian coordinate system. \n\n### Key Objects:\n- **Axes**: The vertical axis is labeled as \\( y \\) and the horizontal axis as \\( x \\). Both axes are marked with evenly spaced intervals.\n- **Curve**: A smooth, continuous curve is plotted from the left, increasing as it moves towards the right.\n- **Points**: \n  - A **solid dot** is present, indicating a point where the function is defined (possibly a point of continuity or an actual value).\n  - An **open circle** indicates a point where the function is not defined or a limit, typically suggestive of a hole in the graph.\n\n### Colors"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/30.jpg",
+            "pid": "18",
+            "name": "30",
+            "caption": "The image depicts a circle with points labeled A, B, C, D, and E, where lines are drawn between various points, illustrating the geometric relationships within the circle.",
+            "description": "The image depicts a geometric diagram featuring a circle and several points and segments inside it. The main elements include:\n\n1. **Circle**: A large, round outline that represents the circumference of the circle.\n\n2. **Points**: There are five labeled points\u2014A, B, C, D, and E. \n   - Points A, B, C, and D are located on the circumference of the circle.\n   - Point E is situated inside the circle.\n\n3. **Lines and Segments**: \n   - Line segments are drawn connecting the points. Specifically:\n     - Segment AB connects points A and B.\n     - Segment CD connects points C and D.\n     - Segment BE connects points B and E.\n     - Segment"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/42.jpg",
+            "pid": "19",
+            "name": "42",
+            "caption": "A cheerful woman with long red hair embraces a smiling man with short light brown hair, both exuding warmth and joy in a casual setting.",
+            "description": "The image depicts two individuals in an affectionate embrace, showcasing a joyful moment. \n\n**Key Objects:**\n- The subjects themselves are the focal point. One individual has wavy, long red hair, while the other has short, light brown hair.\n- They are dressed casually, with the woman wearing a white tank top and the man in a white jacket.\n\n**Colors:**\n- The overall color palette is light and bright, dominated by whites and the warm tones of the woman's hair.\n- The background appears to be neutral, possibly gray or silver, which helps highlight the subjects.\n\n**Actions:**\n- They are both smiling broadly, expressing happiness and camaraderie. The woman is leaning into the man, who has his arms wrapped around her waist"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/93.jpg",
+            "pid": "20",
+            "name": "93",
+            "caption": "The bar graph compares demand in billions of U.S. dollars across various sectors\u2014Computing, Wireless, Consumer, Automotive, Industrial, and Wired Communications\u2014between 2014 and 2019,",
+            "description": "The image is a bar graph comparing demand in billions of U.S. dollars across different sectors for the years 2014 and 2019. \n\n### Key Objects:\n- **Bars**: Each bar represents a different sector, divided for the years 2014 and 2019.\n- **Legend**: Contains color-coded indicators for each sector: \n  - Blue for Computing\n  - Dark Blue for Wireless\n  - Gray for Consumer\n  - Red for Automotive\n  - Green for Industrial\n  - Yellow for Wired Communications\n\n### Colors:\n- **2014 Bars**:\n  - **Computing**: Light Blue\n  - **Wireless**: Dark Blue\n  - **Consumer**: Gray\n  - **"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/45.jpg",
+            "pid": "21",
+            "name": "45",
+            "caption": "The image shows a table displaying the average waiting times at the DMV for each month from August to December, with times varying from 14 to 26 minutes.",
+            "description": "The image presents a table detailing the average waiting time at the DMV (Department of Motor Vehicles) across five months. \n\n### Key Elements:\n- **Title**: The table has a bold heading in a purple background, stating \"Average waiting time at the DMV.\"\n- **Columns**: There are two columns: the first labeled \"Month\" and the second labeled \"Waiting time (minutes).\"\n- **Rows**: Each row corresponds to a month from August to December, listing the waiting times for each respective month.\n\n### Colors:\n- The heading has a vibrant purple color.\n- The table's content is structured in black text against a white background, providing strong contrast for readability.\n\n### Data:\n- **Months and Times**:\n  -"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/94.jpg",
+            "pid": "22",
+            "name": "94",
+            "caption": "The image depicts a triangle ABC with a perpendicular segment BD drawn from point B to line AC, creating right triangle ABD and triangle BDC.",
+            "description": "The image depicts a geometric diagram involving a triangle and some key points. Here\u2019s a detailed description:\n\n- **Triangle ABC**: The main object in the image is a triangle labeled ABC. Point A is at the left vertex, point B is at the top vertex, and point C is at the right vertex.\n- **Point D**: Inside the triangle, there\u2019s an additional point labeled D, which is situated directly below point B, creating a right angle between line segments BD and AC.\n- **Lines**: \n  - The triangle is outlined with thin black lines. \n  - Line segment AC is horizontal, while AB and BC form the slanted sides of the triangle.\n  - Line segment BD is vertical, connecting point B"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/39.jpg",
+            "pid": "23",
+            "name": "39",
+            "caption": "The graph depicts the exponential function \\( y = a^x \\) where \\( a > 1 \\), showing a curve that increases rapidly as \\( x \\) increases, starting from the point (",
+            "description": "The image depicts a graph representing an exponential function, specifically of the form \\( y = a^x \\) where \\( a > 1 \\). \n\n**Key Elements:**\n\n- **Axes:** \n  - The vertical axis is labeled as \\( y \\) and is oriented upwards, suggesting positive values of \\( y \\).\n  - The horizontal axis is labeled as \\( x \\) and extends to the right, indicating positive values of \\( x \\).\n\n- **Curve:** \n  - The curve is a smooth, continuous line that starts close to the origin (0,0) and rises sharply as it moves to the right, illustrating the rapid growth characteristic of exponential functions with a base greater than 1. \n  - The curve is"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/60.jpg",
+            "pid": "24",
+            "name": "60",
+            "caption": "A dramatic black-and-white photo captures a theatrical scene, featuring a poised woman in an elaborate dress engaging with a lively performer in a polka-dotted costume, as they share an animated conversation.",
+            "description": "The image depicts a theatrical scene featuring two characters engaged in an expressive interaction. \n\n**Key Objects:**\n- On the left, a woman in an elegant, flowing gown that has a light-colored hue, possibly pale pink or white, and features intricate detailing, indicates her status or the time period's fashion.\n- On the right, a man dressed in a flamboyant outfit characterized by polka dots and loose-fitting pants, indicative of a comedic or clown-like character. He stands on a small platform or step which adds to his imposing presence in contrast to the seated woman.\n\n**Colors:**\n- The woman's dress is soft and flowing, providing a stark contrast to the vibrant polka dots of the man's outfit, which adds a playful touch to the"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/67.jpg",
+            "pid": "25",
+            "name": "67",
+            "caption": "A green square measuring 4 meters on each side is displayed, outlined in a thin green border.",
+            "description": "The image features a simple green square, measuring 4 meters on each side. The square is filled with a vibrant green color, conveying a feeling of freshness and vitality. The edges of the square are outlined in a darker green, creating a clear boundary and enhancing the shape. \n\nAt each corner of the square, there are measurement labels that indicate the dimension\u20144 m\u2014which further emphasizes the square's uniformity and proportion. The overall scene is minimalistic, focusing solely on the geometric shape without any additional objects or background elements. The simplicity of the design allows for a clean and clear visual that could serve various purposes, such as demonstrating mathematical concepts or design principles."
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/15.jpg",
+            "pid": "26",
+            "name": "15",
+            "caption": "The diagram illustrates a food web, showcasing the relationships between various aquatic organisms, including algae, water plants, tilapia, water snails, tadpoles, and predators like the kingfisher and",
+            "description": "The image appears to illustrate a simple food web in an aquatic ecosystem. Here\u2019s a description of key components and their relationships:\n\n1. **Central Organism (Tilapia)**: At the center of the diagram is the fish species *Tilapia*, likely representing a primary consumer in this web.\n\n2. **Producers (Algae and Water Plants)**: \n   - **Algae**: Positioned to the side, indicating its role as a primary producer that provides energy through photosynthesis.\n   - **Water Plant**: Also a producer, shown as connected to *Tilapia* and other organisms.\n\n3. **Primary Consumers**:\n   - **Common Water Flea**: Linked to both *Tilapia* and *Algae*,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/69.jpg",
+            "pid": "27",
+            "name": "69",
+            "caption": "A collection of colorful geometric shapes, including cubes, spheres, and cylinders, arranged on a light gray surface, reflecting varying levels of light.",
+            "description": "The image displays a collection of geometric shapes arranged on a plain, light gray background. \n\n### Key Objects:\n1. **Shapes**:\n   - **Purple Cube**: Positioned towards the left side.\n   - **Gold Sphere**: This shiny, metallic ball is central in the arrangement.\n   - **Blue Cylinder**: A small, medium-blue cylinder located near the center.\n   - **Red Cylinder**: A smaller, red circular shape positioned slightly towards the bottom.\n   - **Green Cylinder**: A green shape that is slightly larger than the red cylinder and positioned nearby.\n   - **Teal Sphere**: A medium-sized sphere that reflects light and is placed close to the gold sphere.\n   - **Smaller Silver Sphere**"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/3.jpg",
+            "pid": "28",
+            "name": "3",
+            "caption": "The image depicts a geometric figure consisting of triangle ABC with point O located along line segment AC.",
+            "description": "The image depicts a geometric diagram featuring a triangle and a point. Here\u2019s a detailed description:\n\n1. **Key Objects**:\n   - **Triangle**: Formed by points A, B, and C. The triangle is outlined with straight lines and has a clear shape.\n   - **Point O**: Located within the triangle. It appears to be a notable point related to the triangle, potentially the intersection of certain lines or segments.\n\n2. **Colors**: The image is monochromatic, primarily in black and white. The lines of the triangle and point are drawn in black against a white background.\n\n3. **Actions/Relationships**:\n   - The triangle is formed by joining points A, B, and C, with line segments"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/4.jpg",
+            "pid": "29",
+            "name": "4",
+            "caption": "A collection of geometric shapes, including spheres and cylinders in vibrant colors like green, purple, yellow, and a shiny metallic cube, arranged on a flat surface.",
+            "description": "The image features a simple arrangement of various geometric shapes set against a light gray background. \n\n### Key Objects and Colors:\n1. **Spheres**:\n   - A **green sphere** is prominently placed on the left side, contrasting with the background.\n   - A smaller **purple sphere** sits closer to the center.\n\n2. **Cylinders**:\n   - A **yellow cylinder** with a shiny surface is positioned prominently in the image, reflecting light.\n   - A **purple cylinder** stands semi-toward the back on the right, made from a matte material.\n\n3. **Cubes**:\n   - A **metallic gray cube** rests adjacent to the yellow cylinder, adding a sleek, modern touch to the scene"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/12.jpg",
+            "pid": "30",
+            "name": "12",
+            "caption": "A vibrant green bicycle stands beside a colorful toy train and a star-shaped object, all set against a minimalistic background.",
+            "description": "The image features a minimalist scene with a few key objects arranged on a neutral, light gray background. \n\n1. **Bicycle**: The most prominent object is a green bicycle, designed with a simple and modern aesthetic. The frame has a vibrant, eye-catching green hue, with thick tires that suggest durability. The handlebars, made from natural wood, provide a warm contrast to the bright green color of the bike. The bicycle appears to be stationary, positioned slightly to the left of the center of the image.\n\n2. **Blue Rectangular Object**: To the right of the bicycle, there is a rectangular object that is primarily blue in color. It has a smooth surface and is oriented horizontally. The object is likely a stylized representation of"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/27.jpg",
+            "pid": "31",
+            "name": "27",
+            "caption": "In a ceremonial setting, a man in a suit presents a framed certificate and a medal to another man, who stands holding the award with a composed expression.",
+            "description": "The image depicts a formal ceremony where significant awards are being presented. \n\n### Key Objects:\n- **Two Men:** One man, likely a presenter or official, stands on the left, wearing a black suit with a light-colored dress shirt and blue tie. He has a calm expression and is clapping gently, likely acknowledging the other man's achievement. The second man on the right is holding an award or certificate. He is dressed in a dark suit with a white shirt and dark tie. His facial expression is serious yet proud.\n- **Award Presentation:** The award consists of a large ceremonial certificate held open in the right man\u2019s hand, displaying colorful artwork and formal text that likely describes the award. There's also a small box in his other hand, which"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/20.jpg",
+            "pid": "32",
+            "name": "20",
+            "caption": "The bar chart illustrates the government expenditure on secondary education as a percentage of GDP per capita for Czechia (21.37%), Paraguay (12.51%), and Laos (9.29% in ",
+            "description": "The image displays a bar chart depicting government expenditure on secondary education by country, measured as a percentage of GDP per capita for the year 2003. \n\n### Key Elements:\n\n1. **Bars**:\n   - **Czechia**: The uppermost bar is a vibrant teal color, indicating the highest expenditure at **21.37%**.\n   - **Paraguay**: Below, the second bar is a warm, reddish-brown hue, representing an expenditure of **12.51%**.\n   - **Laos**: The bottom bar is a muted dark blue-gray, reflecting an expenditure of **9.29%**, with a note indicating the year as **2002**.\n\n2. **Axes**:\n  "
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/83.jpg",
+            "pid": "33",
+            "name": "83",
+            "caption": "A collection of colorful miniature vehicles, including a green dirt bike, a shiny blue motorcycle, several bicycles, and two stylized buses in pink and blue, arranged against a neutral background.",
+            "description": "The image features a collection of various miniature vehicles arranged on a light gray surface. \n\n1. **Key Objects**:\n   - **Green Dirt Bike**: Positioned on the left side, it has a vibrant green color with purple accents. Its design suggests it's meant for rugged terrain.\n   - **Blue Bicycle**: A standard bicycle located near the center, displaying a shiny blue finish.\n   - **Teal Motorcycle**: Slightly in front of the dirt bike, this motorcycle has a sleek, modern design with a striking teal color.\n   - **Pink and White Bus**: A bus occupies the central part of the scene, featuring a pink body with white details and a flat roof. It has windows that suggest a spacious interior.\n  "
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/52.jpg",
+            "pid": "34",
+            "name": "52",
+            "caption": "A variety of geometric shapes, including spheres, cubes, and cylinders, are arranged on a gray surface, showcasing a mix of colors and textures.",
+            "description": "The image features a collection of geometric shapes arranged in a minimalistic setting. The background is a light gray, providing a neutral canvas that enhances the visibility of the colorful objects.\n\nKey objects in the scene include:\n\n- **A light gray sphere** positioned towards the left.\n- **A shiny green sphere** located near the center-right.\n- **A cube** in a warm brown hue placed in the middle.\n- **A blue cylinder** positioned near the right.\n- **Two small purple cubes** situated towards the foreground on the left.\n- **A larger glossy purple sphere** on the ground near the center.\n  \nThe colors are vibrant and varied, creating a contrast against the gray background. The shapes exhibit a blend of matte and reflective surfaces,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/84.jpg",
+            "pid": "35",
+            "name": "84",
+            "caption": "The image displays a geometric configuration featuring a square (ABCDEFGH) enclosing a circle, with various points labeled, and lines intersecting within the shape, highlighting an unknown point marked by a red question mark",
+            "description": "The image depicts a geometric arrangement involving a square and a circle. Here\u2019s a breakdown of the scene:\n\n1. **Shapes**:\n   - **Square**: The outer boundary is a square, denoted by points A, B, C, D, E, F, G, and H. The square has an orange outline.\n   - **Circle**: Inside the square, there is a green circle that touches the sides of the square, indicating that it is inscribed within the square. The border of the circle is slightly darker green.\n\n2. **Lines**:\n   - Several black lines are drawn within the square and circle. These lines intersect at various points, creating different segments and angles. Key points on these lines include K"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/55.jpg",
+            "pid": "36",
+            "name": "55",
+            "caption": "The image illustrates a geometric configuration featuring triangle ABC with a right angle at C, alongside various line segments and points labeled D, E, F, G, and H.",
+            "description": "The image depicts a geometric illustration involving several lines and points. Here\u2019s a thorough description:\n\n1. **Lines and Points**:\n   - There are multiple straight lines labeled as follows:\n     - **Line FG** is horizontal and runs along the bottom of the image.\n     - **Line DE** is positioned above FG, slightly slanted upwards from left to right.\n     - **Line AC** is vertical, intersecting line FG at point A and meeting line DE at point C.\n     - **Line BH** extends diagonally from point B at the upper right, intersecting line DE.\n\n2. **Points**:\n   - The points are labeled: A, B, C, D, E, F, G, and H."
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/29.jpg",
+            "pid": "37",
+            "name": "29",
+            "caption": "This stained glass window artwork depicts King Richard III on the left and Anne Neville on the right, showcasing their regal attire and symbols of royalty.",
+            "description": "The image depicts a stained glass window featuring two historical figures: King Richard III on the left and Anne Neville on the right.\n\n**Key Objects:**\n- **King Richard III:** He is portrayed in regal attire, featuring a patterned robe adorned with various heraldic symbols, predominantly in rich colors of blue, red, and gold. His expression is serious, and he wears a distinctive black cap.\n- **Anne Neville:** She is depicted in elegant royal garments, richly detailed with gold accents. Anne wears a crown, symbolizing her royal status, and holds a book in her right hand while her left hand is raised, possibly holding a scepter or a floral emblem.\n\n**Colors:**\n- The overall color palette includes vibrant blues, deep reds,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/44.jpg",
+            "pid": "38",
+            "name": "44",
+            "caption": "This image displays a price list for various types of beads, including their shapes and costs per kilogram.",
+            "description": "The image displays a neatly formatted table featuring various types of beads categorized by shape, alongside their respective prices per kilogram. \n\n### Key Objects:\n- **Oval beads**: Priced at $2 per kilogram, these beads have an elongated or oval shape.\n- **Rectangular beads**: Priced at $3 per kilogram, these have four right angles and a length greater than their width.\n- **Star-shaped beads**: Also priced at $2 per kilogram, these beads take the form of a star.\n- **Spherical beads**: Priced at $2 per kilogram, these have a round, three-dimensional shape.\n- **Heart-shaped beads**: These are more decorative, priced at $3 per kilogram, shaped like a heart"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/95.jpg",
+            "pid": "39",
+            "name": "95",
+            "caption": "The image features intersecting lines forming angles around the point O, with labeled points A, B, C, D, and E.",
+            "description": "The image depicts a simple geometric diagram consisting of intersecting lines. The central point is labeled **O**, and it serves as the intersection of four lines. \n\n- **Lines:**\n  - Line **AB** extends diagonally from the upper left to the lower right.\n  - Line **CD** extends horizontally from the left to the right, intersecting line **AB**.\n  - Line **OE** is a vertical line that goes straight upward from point **O**.\n\n- **Labels:** \n  - The letters **A**, **B**, **C**, **D**, and **E** are the points of interest marked on the respective lines.\n\n- **Colors and Style:** \n  - The lines are represented in a standard black"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/38.jpg",
+            "pid": "40",
+            "name": "38",
+            "caption": "The image displays a bar graph with two bars, labeled \"butt\" and \"sick,\" showing values of approximately 8 and 6 respectively, against a blue color scheme.",
+            "description": "The image features a simple bar graph with a white background. At the top, there is a title labeled \"Title\" in a clear, bold font. The graph displays two vertical bars, one labeled \"butt\" and the other \"sick.\" \n\nThe bar corresponding to \"butt\" is significantly taller, reaching nearly the value of 9, while the \"sick\" bar is shorter, indicating a value of around 6. Both bars are filled with a solid blue color, creating a stark contrast against the white background. \n\nThe vertical axis is labeled \"Values\" and includes tick marks for reference, ranging from 0 to 10. The overall scene conveys a straightforward comparison between the two categories represented by the bars. The"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/43.jpg",
+            "pid": "41",
+            "name": "43",
+            "caption": "The bar graph illustrates the average monthly precipitation in Christchurch, New Zealand, showing variations in rainfall from January to December, with May and June experiencing the highest levels of precipitation.",
+            "description": "The image is a bar graph illustrating the average precipitation in Christchurch, New Zealand, throughout the months of the year. \n\n### Key Elements:\n\n- **Title:** At the top, there is a title that reads \"Average precipitation in Christchurch, New Zealand.\"\n  \n- **Y-Axis:** The vertical axis on the left is labeled \"Precipitation (mm)\" and ranges from 0 to 70 mm, indicating the amount of rainfall measured.\n\n- **X-Axis:** The horizontal axis at the bottom labels each month from January to December.\n\n### Bar Colors:\n- Each month's precipitation is represented by a bar of different colors:\n  - **January:** Light pink\n  - **February:** Light red\n  - **March:** Light purple"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/92.jpg",
+            "pid": "42",
+            "name": "92",
+            "caption": "A luxurious bathroom features a stylish bathtub with a panoramic view of a vibrant cityscape and lush green surroundings, framed by a large, uniquely shaped window.",
+            "description": "The image features a luxurious bathroom scene with a stunning view. The focal point is an elegant bathtub positioned near a large, octagonal window that frames the panoramic outside view. \n\n### Key Objects:\n1. **Bathtub**: A spacious, white, jetted bathtub is situated in the foreground, inviting and well-maintained. \n2. **Faucet and Controls**: There\u2019s a sleek faucet and several chrome controls near the bathtub, implying modern amenities.\n3. **Window**: The window is significant, not just for its shape but also for its size, allowing ample natural light to fill the room.\n\n### Colors:\n- **Interior Colors**: The bathroom features warm, neutral tones with beige and light brown tiles, creating a"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/31.jpg",
+            "pid": "43",
+            "name": "31",
+            "caption": "A colorful assortment of toy vehicles, including a green car, a red bus, bicycles, and various aircraft models, arranged on a light background.",
+            "description": "The image features a collection of colorful toy vehicles arranged on a neutral gray background. \n\n### Key Objects:\n1. **Car**: A green toy car occupies the center of the image, with a purple and pink detail on the sides. It has a sleek design, resembling a modern sedan.\n2. **Truck**: To the right of the car is a red toy truck with a blue cab. Its boxy shape contrasts with the sleeker design of the car.\n3. **Bicycles**: On the left, there are two bicycles. One is a yellow bike with purple accents, while the other is a vibrant aqua-colored bicycle, suggesting a more adventurous design.\n4. **Motorbike**: Closer to the center,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/36.jpg",
+            "pid": "44",
+            "name": "36",
+            "caption": "The image captures two leaders smiling and shaking hands at the Third GECF Summit, with flags from various countries displayed in the background.",
+            "description": "The image depicts two men engaged in a friendly handshake, suggesting a moment of diplomacy or agreement. One individual is wearing a dark suit with a white shirt and light tie, while the other is dressed in traditional Islamic attire, including a black robe and a white turban. \n\nIn the background, there are several flags representing various nations, including a combination of colors like red, green, white, and black, adding an international context to the scene. The backdrop features a large blue wall with the text \"GECF\" prominently displayed, indicating that this is related to the Gas Exporting Countries Forum, along with the phrase \"THE THIRD GECF SUMMIT.\"\n\nThe overall atmosphere is formal yet cordial, highlighting themes of cooperation and dialogue between the"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/78.jpg",
+            "pid": "45",
+            "name": "78",
+            "caption": "The image displays a series of boxes containing numbers, with the first two sets of boxes followed by a third set that includes an unknown value represented by a question mark.",
+            "description": "The image features three columns, each containing a vertical arrangement of numbers within rectangular boxes outlined in black. The background is a light shade, enhancing clarity.\n\n1. **First Column:**\n   - It has three rows of numbers:\n     - Top row: 2\n     - Middle row: 7\n     - Bottom row: 5\n\n2. **Second Column:**\n   - It contains three rows as well:\n     - Top row: 2\n     - Middle row: 3\n     - Bottom row: 4\n\n3. **Third Column:**\n   - The arrangement here also consists of three rows:\n     - Top row: 10\n     - Middle row: 21\n     - Bottom row: A"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/76.jpg",
+            "pid": "46",
+            "name": "76",
+            "caption": "The image illustrates the trophic levels of two food chains: a terrestrial food chain featuring animals like snakes and lizards, and an aquatic food chain with organisms such as pelicans and fish, highlighting the",
+            "description": "The image presents a diagram detailing the trophic levels in both terrestrial and aquatic food chains. \n\n### Key Elements:\n\n1. **Trophic Levels**:\n   - The diagram is divided into several horizontal sections, each representing a different trophic level, from primary producers at the bottom to tertiary consumers at the top.\n\n2. **Terrestrial Food Chain**:\n   - **Top Level (Tertiary Consumer)**: \n     - Features a **snake**, depicted with a brown and tan color pattern, signifying its role as a secondary carnivore.\n   - **Middle Levels**:\n     - Below the snake is a **lizard**, illustrated in green, representing a secondary consumer (carnivore).\n     - The next level shows a **"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/71.jpg",
+            "pid": "47",
+            "name": "71",
+            "caption": "The image features a yellow rectangle measuring 3 feet in width and 6 feet in height.",
+            "description": "The image depicts a simple and straightforward rectangular diagram with the dimensions and measurements outlined. \n\n### Key Features:\n- **Shape**: A rectangle with a longer height compared to its width.\n- **Dimensions**: The rectangle measures 3 feet in width and 6 feet in height.\n- **Color**: The rectangle is filled with a vibrant yellow hue.\n- **Outline**: The outline of the rectangle is in a slightly darker yellow or orange shade, creating a clear distinction of its shape.\n\n### Scene Composition:\n- There are no additional objects or complex elements within the image, making it minimalistic.\n- The emphasis is solely on the rectangle and its dimensions, indicating that the primary purpose of the image may be instructional, possibly related to space"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/40.jpg",
+            "pid": "48",
+            "name": "40",
+            "caption": "A collection of various colorful geometric shapes, including cubes, cylinders, and spheres, arranged artistically against a neutral background.",
+            "description": "The image features a variety of geometric shapes arranged in a somewhat scattered formation. The key objects include cubes, rectangular prisms, and cylinders, made in different colors and materials. \n\n- **Colors**: The objects exhibit vibrant and glossy finishes. There are:\n  - A shiny **gold** cube on the left.\n  - A **light blue** sphere positioned near the top left.\n  - A **green** cube placed in the center.\n  - A **light gray** cube next to the green one.\n  - A **yellow** cube located in the middle towards the bottom.\n  - A **purple** cube situated slightly to the right.\n  - A **red** cube smaller in size, resting next to the purple cube.\n"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/91.jpg",
+            "pid": "49",
+            "name": "91",
+            "caption": "A collection of colorful toy vehicles, including various bicycles in bright hues and a small golden car, arranged against a neutral background.",
+            "description": "The image depicts a playful and colorful arrangement of miniature vehicles on a neutral gray background. Central to the scene are three bicycles and a small car, each crafted from shiny, metallic materials that reflect light beautifully.\n\n1. **Bicycles**:\n   - **Left Side**: A blue bicycle with green accents stands prominently. It has a classic design, featuring a basket on the front and is positioned in a slightly angled manner.\n   - **Center**: Next to it is a vibrant purple bicycle, which features a sporty frame and red handlebars. Its wheels are large and round, contributing to its dynamic appearance.\n   - **Right Side**: A third bicycle is more delicate, showcasing a light pink color with subtle detailing. It has thin tires"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/47.jpg",
+            "pid": "50",
+            "name": "47",
+            "caption": "A collection of various geometric shapes in different colors and materials, including cylinders, spheres, cubes, and a reflective object, arranged on a neutral background.",
+            "description": "The image depicts a collection of geometric shapes arranged on a neutral background. The objects include various three-dimensional forms, each showcasing different colors and finishes. \n\n### Key Objects:\n1. **Blue Cube**: A larger square form with a shiny, reflective surface.\n2. **Light Blue Cylinder**: A smooth cylinder with a soft, pastel hue.\n3. **Small Blue Cube**: A smaller cube positioned near the larger blue cube, also in a light blue color.\n4. **Red Cylinder**: A prominent, solid red cylinder that stands upright.\n5. **Purple Sphere**: A glossy, reflective sphere that adds a vibrant contrast to the other shapes.\n6. **Teal Sphere**: Another sphere, but in a soft teal"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/96.jpg",
+            "pid": "51",
+            "name": "96",
+            "caption": "The pie chart illustrates that 78% of respondents are dissatisfied with the direction of the country, while 20% are satisfied and 2% do not know (DK).",
+            "description": "The image is a pie chart illustrating public sentiment regarding the direction of a country, titled \"Most Dissatisfied With Country Direction.\" The chart is divided into three distinct segments, each representing a different percentage of opinion.\n\n1. **Segments**:\n   - **Dissatisfied**: This is the largest segment, comprising 78% of the pie. It is colored in a light beige or peach tone, clearly indicating a prevailing sense of dissatisfaction among the respondents.\n   - **Satisfied**: This smaller segment accounts for 20% and is shown in a darker brown color. This indicates a minority feeling satisfied with the country's direction.\n   - **DK (Don't Know)**: The smallest segment, representing 2%, is depicted in a more muted yellow"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/49.jpg",
+            "pid": "52",
+            "name": "49",
+            "caption": "Two men dressed in white shirts and black ties stand against a wall, one with a serious expression and the other relaxed, next to a sign reading \"ONE WAY.\" ",
+            "description": "The image features two young men standing side by side against a plain wall. The scene is presented in black and white, giving it a timeless, classic feel. \n\n**Key Objects:**\n- **Wall:** The background is a simple white wall, which enhances the focus on the subjects.\n- **Signage:** On the wall, there is a bold graphic reading \"ONE WAY,\" accompanied by an arrow pointing to the left, which adds context and a slight sense of direction to the composition.\n\n**Colors:**\n- The overall color scheme is monochromatic, with varying shades of gray due to the absence of color, creating contrast between the subjects and the background.\n\n**Actions:**\n- The first man on the left stands with a serious expression,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/100.jpg",
+            "pid": "53",
+            "name": "100",
+            "caption": "The image depicts a stacked bar chart comparing two categories, \"tin\" and \"ace,\" across various labels such as \"virus,\" \"vigor,\" and \"toilet,\" with values ranging from ",
+            "description": "The image displays a horizontal bar chart with the title \"Title\" at the top. The chart has a light gray background and consists of bars representing various categories such as \"virus,\" \"vigor,\" \"ruling,\" \"ninety,\" \"calf,\" \"flower,\" and \"toilet.\" Each category has two bars that correspond to different values.\n\n### Key Objects:\n- **Bars:** The chart features two distinct styles of bars: one representing \"tin\" in red with a checkered pattern and the other representing \"ace\" in cyan with diagonal lines.\n- **Labels:** Each category is labeled on the left side of the chart, and the corresponding bars indicate values plotted along the horizontal axis.\n\n### Colors:\n- **Background:** Light gray"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/98.jpg",
+            "pid": "54",
+            "name": "98",
+            "caption": "This image presents a brain teaser that uses shapes to represent numbers in an IQ test format, challenging the viewer to solve for the unknown value represented by the red square.",
+            "description": "The image features a colorful brain teaser designed for an IQ test. The background consists of alternating shades of light and dark gray, creating a spiral effect that draws the viewer\u2019s eye inward. \n\nAt the top of the image, the text \"Brain Teaser for IQ Test\" is boldly printed in a playful, yellow font. \n\nThe main content includes three equations involving geometric shapes:\n\n1. The first equation consists of a blue circle, a red square, and the number 5 on the right side. \n2. The second equation features two yellow triangles added together, leading to the result of 8. \n3. The third equation shows the blue circle again in combination with a yellow triangle, equaling 7.\n\nLastly, there is a"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/35.jpg",
+            "pid": "55",
+            "name": "35",
+            "caption": "The image depicts a circle with points A, B, C, E, and F marked, along with a triangle formed by points A, B, and E, and a line segment CF intersecting",
+            "description": "The image depicts a geometric figure consisting of a circle with a few key elements:\n\n1. **Circle**: The main feature is a large circle drawn with a solid line, representing a classic geometric shape.\n\n2. **Points**: There are several labeled points:\n   - **E**: Located at the top of the circle.\n   - **A** and **B**: Placed on the left and right sides of the circle, respectively.\n   - **C**: Situated inside the circle but closer to the center.\n   - **O**: A central point within the circle, potentially representing a center or another significant point.\n   - **F**: Located below point A.\n\n3. **Lines**: \n   - A"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/32.jpg",
+            "pid": "56",
+            "name": "32",
+            "caption": "The image depicts a quadrilateral ABCD with a diagonal line segment AC drawn between vertices A and C.",
+            "description": "The image depicts a geometric figure featuring a parallelogram labeled ABCD. The key elements of the scene include:\n\n- **Shape**: The figure is a parallelogram, characterized by two pairs of parallel sides. The sides AB and CD, and AD and BC are parallel to each other.\n- **Vertices**: The corners of the parallelogram are labeled with letters: A (bottom left), B (bottom right), C (top right), and D (top left).\n- **Diagonal**: A diagonal line is drawn from point A to point C, dividing the parallelogram into two triangles: triangle ABC and triangle ADC.\n- **Lines**: The lines forming the sides of the parallelogram are straight and clearly defined"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/72.jpg",
+            "pid": "57",
+            "name": "72",
+            "caption": "The image displays a stem-and-leaf plot illustrating the distribution of houses per block, with stems representing the tens place and the leaves indicating the units.",
+            "description": "The image depicts a stem-and-leaf plot titled \"Houses per block.\" It consists of two main components: a vertical column labeled \"Stem\" and a horizontal row labeled \"Leaf.\" \n\n### Key Features:\n- **Color and Design**: The plot features a simple, clean layout with a lavender-colored border at the top, denoting the title. The background appears plain, enhancing readability.\n- **Stem Column**: This is on the left side, displaying numbers from 0 to 3, signifying different groups or ranges of data related to the number of houses.\n- **Leaf Rows**: The right side contains the corresponding leaf values for each stem, which represent the distribution of houses.\n  \n### Data Representation:\n- For Stem"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/75.jpg",
+            "pid": "58",
+            "name": "75",
+            "caption": "The image features a pie chart divided into six segments, each represented by distinct colors: Sky Blue, Web Maroon, Salmon, Dark Olive, Dark Seafoam, and Burlywood, with a label",
+            "description": "The image depicts a pie chart divided into several segments, each representing different categories or values. The overall shape is a perfect circle, and it is filled with various color-coded sections, each labeled with a specific color name in the legend.\n\n**Key Elements:**\n\n- **Color Segments:**\n  - **Sky Blue:** A bright, light blue occupies one segment.\n  - **Web Maroon:** A deep red color fills another section, dominating the upper left area.\n  - **Salmon:** A soft pinkish-orange hue is present in a segment adjacent to the maroon.\n  - **Dark Olive:** A muted green occupies a segment that transitions towards the lower left.\n  - **Dark Seafoam:** A softer green tone is represented"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/18.jpg",
+            "pid": "59",
+            "name": "18",
+            "caption": "A skier in a bright red jacket and yellow beanie glides gracefully down a snowy slope, surrounded by a winter landscape.",
+            "description": "The image captures a vibrant winter scene where a skier is gliding down a snow-covered slope. \n\n**Key Objects:**\n- **Skier:** The focal point is a person skiing, wearing a bright red jacket that stands out against the surrounding white snow. They have on light blue ski pants and are equipped with skis and ski poles. A yellow beanie adds a cheerful touch to their look.\n- **Snow:** The ground is blanketed with a thick layer of fresh snow, creating a smooth, pristine surface. The snow has been shaped into gentle slopes and mounds, indicating recent activity or grooming.\n- **Background:** In the distance, there are hints of trees covered in snow, suggesting a tranquil and picturesque mountainous setting.\n\n**Colors:"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/64.jpg",
+            "pid": "60",
+            "name": "64",
+            "caption": "The image shows two jars containing particles of different samples; Sample A has larger, faster-moving green particles, while Sample B has smaller, slower-moving blue particles, along with their respective mass and average particle",
+            "description": "The image depicts two transparent jars, labeled \"Sample A\" and \"Sample B,\" each containing particles represented as colored circles. \n\n- **Sample A** features green circles, indicating the particles within this jar. There are several green particles shown, around six or seven, and the lines around them suggest movement or vibration. The label below this jar specifies that the mass of each particle is 40 atomic mass units (u) and their average particle speed is 950 meters per second (m/s).\n\n- **Sample B** contains blue circles, representing a different set of particles. This jar has a similar number of particles as Sample A, also showing movement with wavy lines. The corresponding label indicates that each blue particle has a mass of 32"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/63.jpg",
+            "pid": "61",
+            "name": "63",
+            "caption": "A composition of various colorful geometric shapes\u2014including cubes and spheres\u2014set against a subtle, neutral background.",
+            "description": "The image depicts a collection of various geometric shapes arranged on a neutral background. \n\n### Key Objects:\n- **Cubes**: \n  - A **light blue cube** positioned centrally. \n  - A **red cube** located towards the left.\n- **Spheres**: \n  - A **green sphere** placed adjacent to the blue cube, reflecting light.\n  - A **purple sphere** located nearby, smaller in size.\n  - A **shiny red sphere** resting close to the red cube.\n  - An additional **brown sphere** slightly to the right of the blue cube.\n- **Cylinder**: \n  - A small **gray cylinder** positioned further left, contrasting against the colorful shapes.\n\n### Colors:\n-"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/9.jpg",
+            "pid": "62",
+            "name": "9",
+            "caption": "The image depicts three squares labeled A, B, and C, where squares A and B are positioned at angles above square C.",
+            "description": "The image consists of three geometric shapes\u2014two squares and one rectangle\u2014arranged in a specific orientation. Here\u2019s a detailed description of the scene:\n\n1. **Shapes and Arrangement**:\n   - **Square C**: This is the largest shape and serves as the base. It is oriented with its sides parallel to the edges of the image.\n   - **Square A**: This shape is positioned at an angle above Square C. It is a square and overlaps slightly with Square C at the top left corner.\n   - **Square B**: This smaller square is placed at an angle, overlapping with Square C at the top right corner. It is also positioned such that it appears to be slightly above Square C.\n\n2. **Lines and"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/7.jpg",
+            "pid": "63",
+            "name": "7",
+            "caption": "The clock shows the time as 9:15, with the minute hand pointing at the 3 and the hour hand slightly past the 9.",
+            "description": "The image features a clock face set against a purple background. The clock is circular and has a white face with clearly marked hour and minute numbers ranging from 1 to 12. The hour hand, in black, points slightly past the 9, while the minute hand points directly at the 3. \n\nThe hour hand is shorter and thicker than the minute hand, emphasizing the time displayed on the clock. Small black tick marks indicate each hour, and there are additional smaller markings between each number for greater precision. The overall design is clean and straightforward, with a modern aesthetic featuring no additional embellishments. The purple border enhances the visual appeal while keeping the focus on the clock's functionality."
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/11.jpg",
+            "pid": "64",
+            "name": "11",
+            "caption": "A group of colorful geometric shapes, including spheres and cylinders, is arranged against a neutral background, creating a visually engaging composition.",
+            "description": "The image features a minimalistic arrangement of geometric shapes against a neutral background. Here\u2019s a detailed description:\n\n**Key Objects:**\n1. **Cylinders**: There are three cylindrical shapes in varied colors:\n   - A tall, shiny **blue cylinder** positioned centrally.\n   - A **green cylinder** next to the blue one.\n   - A **purple cylinder** located towards the right.\n\n2. **Spheres**: There are two spheres:\n   - A **red sphere** situated in front of the blue cylinder.\n   - A **light blue sphere** located near the bottom center of the image.\n\n3. **Cube**: A small **yellow cube** is placed to the left of the green cylinder.\n\n**Colors:"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/16.jpg",
+            "pid": "65",
+            "name": "16",
+            "caption": "The bar chart illustrates the sales statistics for two items, candy and cook, across four different stores, with varying units sold for each item.",
+            "description": "The image is a bar chart displaying sales statistics for various items in different stores. The chart has a grid layout with the following characteristics:\n\n- **Title**: At the top, the title reads \"Sales statistics for items in different stores,\" indicating the overall subject of the data.\n  \n- **Axes**: \n  - The horizontal axis (x-axis) lists four stores: \"very,\" \"mill,\" \"cop,\" and \"dot.\"\n  - The vertical axis (y-axis) measures the \"Units sold,\" ranging from 0 to 10, with marked increments to help interpret the data.\n\n- **Bars**:\n  - There are two sets of bars for each store: one representing the sales of \"candy\" and the other"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/23.jpg",
+            "pid": "66",
+            "name": "23",
+            "caption": "The graph displays the absolute value function \\( f(x) = |2x - 3| + 1 \\), which forms a V-shape with its vertex at the point (1.5",
+            "description": "The image depicts a mathematical graph plotting the function \\( f(x) = |2x - 3| + 1 \\). \n\n### Key Elements:\n\n1. **Graph Structure**:\n   - The overall shape of the graph forms a \"V\" shape, typical of absolute value functions.\n   - The vertex of the \"V\" is located at the point where \\( x = 1.5 \\) (the point of symmetry for the function), which corresponds vertically to \\( y = 1 \\).\n\n2. **Axes**:\n   - The horizontal axis (x-axis) is marked with values ranging from -5 to 10.\n   - The vertical axis (y-axis) has values ranging from 0 to 10.\n  "
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/89.jpg",
+            "pid": "67",
+            "name": "89",
+            "caption": "A bustling city street scene featuring vehicles navigating through traffic lights, a bus, and pedestrians along the sidewalks, framed by bare trees and overhead wires.",
+            "description": "The image depicts an urban street scene that conveys a bustling yet organized intersection. \n\n### Key Objects:\n- **Traffic Signals**: Various traffic lights dominate the scene, with red, green, and yellow indicators guiding vehicles and pedestrians. The presence of both pedestrian signals and vehicular signals enhances the sense of order.\n- **Vehicles**: A mix of cars is seen along the road, including a prominent blue bus at the right side of the image and another vehicle further down the street. A cyclist is also visible, navigating the bike lane.\n- **Street Signage**: There are multiple traffic signs, including a \"No Turns\" sign and a \"One Way\" sign, guiding both drivers and pedestrians.\n\n### Colors:\n- **Traffic Lights**"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/58.jpg",
+            "pid": "68",
+            "name": "58",
+            "caption": "The graph displays two datasets represented by two series of colored dots, with the Firebrick series exhibiting a downward trend in value as the x-axis increases, while the Orange series remains relatively stable and lower in",
+            "description": "The image presents a scatter plot with two data series, each represented by different colored dots. \n\n### Key Elements:\n1. **Axes**:\n   - The **horizontal axis (x-axis)** is labeled \"xaxis_label,\" indicating the value range spans from 0 to 100.\n   - The **vertical axis (y-axis)** is labeled \"yaxis_label,\" with values ranging from approximately 64 to 68.\n\n2. **Data Series**:\n   - There are two sets of dots:\n     - **Firebrick Series**: Represented by red dots, starting high at around 68 on the y-axis and showing a downward trend as the x-axis values increase.\n     - **Orange Series**: Represented by orange dots"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/24.jpg",
+            "pid": "69",
+            "name": "24",
+            "caption": "The bar chart displays the values associated with four colors: Dark Salmon, Periwinkle, Gray, and Tomato, with Tomato having the highest value, followed by Dark Salmon, Periwinkle, and",
+            "description": "The image depicts a bar chart representing data with different color-coded categories. Here's a detailed description:\n\n- **Title**: At the top, labeled as \"title,\" indicating the purpose or subject of the chart.\n- **Axes**:\n  - The **x-axis** has labels for four categories: \"Dark Salmon,\" \"Periwinkle,\" \"Gray,\" and \"Tomato.\" These are identified by their names positioned directly beneath each corresponding bar.\n  - The **y-axis** is labeled \"yaxis_label\" and has numerical values ranging from 0 to 100, representing the scale for measurement.\n\n- **Bars**:\n  - **Dark Salmon**: This bar is in a soft orange-pink color and has a height indicating a"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/87.jpg",
+            "pid": "70",
+            "name": "87",
+            "caption": "The image presents a table showing the relationship between price, quantity demanded, and quantity supplied, highlighting how changes in price affect consumer demand and producer supply at various price points.",
+            "description": "The image displays a table organized into three columns. The first column is labeled \"Price,\" the second \"Quantity demanded,\" and the third \"Quantity supplied.\" The table contains numerical data corresponding to various price points.\n\n### Key Details:\n- **Column Headers**: The headers are in a purple-colored background.\n- **Data**:\n  - The price ranges from $250 to $970, increasing in increments.\n  - The quantity demanded decreases as the price increases: 14,400 at $250, down to 2,000 at $970.\n  - The quantity supplied increases as the price increases: starting from 1,200 at $250, up to 19,200 at $970.\n\n### Color and Format:\n- The table"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/56.jpg",
+            "pid": "71",
+            "name": "56",
+            "caption": "The image depicts a rectangle measuring 1 yard in width and 2 yards in height, highlighted in an orange shade with labeled dimensions.",
+            "description": "The image depicts a rectangular shape outlined with a bright orange border. The rectangle is filled with a soft, light orange color, creating a warm and inviting appearance. The dimensions of the shape are marked clearly along the edges: it is 1 yard in width and 2 yards in height. \n\nAt each corner of the rectangle, the labels indicate the dimensions, with \"1 yd\" positioned at the top and bottom, and \"2 yd\" placed on the left and right sides. The overall scene is simple yet clear, focusing entirely on the rectangular figure without any additional objects or distractions in the background. The clean design and the use of contrasting colors make the dimensions easy to read and understand."
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/80.jpg",
+            "pid": "72",
+            "name": "80",
+            "caption": "This illustration depicts a simplified marine food web, showing the interactions between various sea creatures such as dolphins, seals, seagulls, and a crab, alongside their food sources like herring, plankton",
+            "description": "The image depicts a colorful diagram of a marine food web, illustrating the interactions among various sea animals and plants.\n\n### Key Objects:\n1. **Animals**:\n   - **Dolphin** (left side) - depicted with a streamlined body and fins.\n   - **Seal** (top center) - characterized by a round body and whiskers.\n   - **Seagull** (top right) - shown flying, with wings spread and a pointed beak.\n   - **Starfish** (towards the right) - recognizable by its star shape and multiple arms.\n   - **Crab** (center) - illustrated with a prominent shell and pincers.\n   - **Mussel** (lower center) - depicted as"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/51.jpg",
+            "pid": "73",
+            "name": "51",
+            "caption": "A colorful arrangement of miniature vehicles, including airplanes, buses, a bicycle, and a vintage car, scattered on a neutral background.",
+            "description": "The image showcases a playful arrangement of various toy vehicles set against a soft, neutral background. Here\u2019s a detailed description:\n\n### Key Objects:\n1. **Bicycle**: A prominent turquoise bicycle is centrally located. It features a distinctive frame and bright yellow wheels, making it a focal point of the composition.\n2. **Bus**: A toy school bus positioned near the bicycle has a classic design with a bright yellow body and windows, contributing to the vibrant color palette.\n3. **Airplane**: On the left side, there\u2019s a sleek gray toy airplane with red accents on the tail, emphasizing its aerodynamic shape.\n4. **Cars**: Two toy cars are present: a vintage-looking black car and a smaller purple bus, both"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/74.jpg",
+            "pid": "74",
+            "name": "74",
+            "caption": "The bar chart illustrates the percentage of the population using at least a basic drinking water source in 2000, highlighting that Iceland leads at 100%, followed closely by Hungary at 99.96%,",
+            "description": "The image is a bar chart illustrating the share of the population that utilizes at least a basic drinking water source in the year 2000 for four countries: Iceland, Hungary, Turkey, and Cambodia. \n\n### Key Objects:\n1. **Bars**: Each bar represents a country and its corresponding percentage of the population with access to basic drinking water.\n2. **Axes**: \n   - The vertical axis (y-axis) indicates the percentage of the population, ranging from 0% to 100%.\n   - The horizontal axis (x-axis) lists the countries.\n\n### Colors:\n- **Iceland**: Purple bar, representing 100% of the population.\n- **Hungary**: Teal bar, representing 99.96"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/73.jpg",
+            "pid": "75",
+            "name": "73",
+            "caption": "The image presents a pattern recognition puzzle featuring various geometric shapes arranged in rows, with options labeled A through F below for possible completions of the pattern.",
+            "description": "The image is a graphic layout resembling a puzzle or logic test, consisting of several geometric shapes arranged in a structured format.\n\n### Key Elements:\n\n1. **Overall Structure:**\n   - The image is divided into two main sections: a top part with three rows of shapes and a bottom part displaying potential answers labeled A through F.\n\n2. **Top Section:**\n   - There are **three rows**, each containing **three shapes** in a rectangular frame.\n   - The colors predominantly used are **light blue** for the background frames, and **purple** for the shapes inside them.\n   - Each shape in this section varies:\n     - The **first row** features shapes like a hexagon, hexagon with a circle, and a"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/33.jpg",
+            "pid": "76",
+            "name": "33",
+            "caption": "The image illustrates the transformation of a two-dimensional shape, a semicircle, into a three-dimensional cone, demonstrating the process of forming a cone by revolving the semicircle around its diameter.",
+            "description": "The image consists of a two-part illustration. \n\nOn the left side, there is a simple outline of a curved shape resembling a semicircle or a dome. The shape is presented with a smooth, curved top and straight ends. This object appears to be a geometric figure in a flat, two-dimensional representation, lacking any colors or shading\u2014just a clear, black outline.\n\nOn the right side, the image transitions into an illustration of a three-dimensional cone. It's represented by a conical shape with a pointed apex at the top and a circular base at the bottom. The cone is also depicted in a simple outline style, similar to the left, with dashed lines indicating some internal structure or measurements to represent depth or sections of the cone.\n\nThere is"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/48.jpg",
+            "pid": "77",
+            "name": "48",
+            "caption": "The image depicts a rectangle labeled T, W, Y, and X, with two angles measuring 52\u00b0 and 38\u00b0, and internal segments marked with numbers 1 through 4.",
+            "description": "The image depicts a geometric figure, specifically a rectangle labeled with points and internal angles. Here's a detailed description of the elements within the image:\n\n- **Overall Shape**: The main shape is a rectangle, outlined in a blue line, characterized by four right angles at each corner.\n\n- **Vertices**: The corners of the rectangle are labeled with the following letters in a clockwise manner: T (top-left), W (top-right), X (bottom-right), and Y (bottom-left).\n\n- **Diagonal**: There is a diagonal line drawn from vertex T to vertex X, intersecting at point Z inside the rectangle. This diagonal is also marked with a blue line.\n\n- **Segments**: The segments along the sides of the rectangle are labeled"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/99.jpg",
+            "pid": "78",
+            "name": "99",
+            "caption": "A cheerful scene captures a woman dancing happily in a cozy room while two playful cats frolic around her, one leaping off a chair.",
+            "description": "The image depicts a lively indoor scene. In the center, a joyful girl is dancing, wearing a white long-sleeve top and red pants. She has a playful expression, and her arms are extended out to the sides, suggesting a sense of freedom and happiness.\n\nTo her right, a white cat is seemingly leaping off a chair. The cat appears to be in mid-air, conveying a sense of playfulness and energy. The chair, made of dark wood, is positioned centrally in the scene, and the cat\u2019s action adds an element of surprise.\n\nOn the left side of the image, a gray cat is observing the dancing girl, adding to the playful atmosphere. The background features a simple, warm-toned interior, with light beige"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/34.jpg",
+            "pid": "79",
+            "name": "34",
+            "caption": "The graph depicts a series of red points connected in a downward diagonal trend, illustrating a linear relationship with a negative slope across the Cartesian coordinate system.",
+            "description": "The image depicts a Cartesian coordinate system, also known as a graph, displayed on a grid. The key features and elements of the image include:\n\n1. **Axes**: The vertical axis is labeled as \\( y \\) and the horizontal axis is labeled as \\( x \\). Both axes extend from -6 to 6, with each unit marked and numbered at intervals of one.\n\n2. **Grid**: The background consists of a grid formed by horizontal and vertical lines intersecting at regular intervals, creating a coordinate plane. The grid is lightly shaded to provide a visual structure.\n\n3. **Data Points**: A series of red points are plotted on the graph. Each point has a filled circle (solid) along with an open circle,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/46.jpg",
+            "pid": "80",
+            "name": "46",
+            "caption": "The diagram illustrates the life cycle of a spider, showing the progression from adult spider to egg sac, eggs, baby spiderlings, and finally, mature spiderlings, forming a circular flow of development.",
+            "description": "The image illustrates the life cycle of a spider in a clear and educational format. \n\n### Key Objects:\n- **Spider**: Depicted as an adult on a web, showcasing its role in the life cycle.\n- **Egg Sac**: Illustrated as a small, cocoon-like structure made of silk, resting on a branch.\n- **Eggs**: Shown within the egg sac, typically represented as small, round shapes. \n- **Spiderlings**: Young spiders depicted after they hatch from the eggs.\n- **Baby Spiderlings**: A slightly larger depiction than the spiderlings, indicating their growth.\n\n### Colors:\n- The spider is primarily colored in shades of brown or black, which is common for many species.\n- The"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/97.jpg",
+            "pid": "81",
+            "name": "97",
+            "caption": "The bar chart compares the accuracy of different algorithms, showing a significant difference where the algorithm labeled \"irony\" achieves a high accuracy near 9, while \"icy\" scores below 3.",
+            "description": "The image features a bar graph that compares the accuracy of two different algorithms labeled \"icy\" and \"irony.\" \n\n### Key Elements:\n\n- **Axes**: \n  - The vertical axis (Y-axis) represents \"Accuracy,\" ranging from 0 to 10.\n  - The horizontal axis (X-axis) lists the two algorithms: \"icy\" and \"irony.\"\n\n- **Bars**:\n  - The bar for \"icy\" is relatively short, indicating low accuracy (approximately 2).\n  - The bar for \"irony\" is significantly taller, representing high accuracy (about 9).\n\n### Colors:\n- Both bars are shaded in a light blue color, with the bars having a soft fill that is easy on the eyes"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/41.jpg",
+            "pid": "82",
+            "name": "41",
+            "caption": "A cordial handshake between two leaders, flanked by the flags of the United States and Romania, takes place in a prestigious setting with elegant decor.",
+            "description": "The image depicts a formal diplomatic meeting, showcasing two men engaged in a handshake. \n\n### Key Objects:\n1. **Flags**: \n   - On the left, an American flag with red, white, and blue colors.\n   - On the right, a Romanian flag featuring blue, yellow, and red vertical stripes.\n   \n2. **Chandelier**: A prominent crystal chandelier hangs from the ceiling, adding elegance to the room.\n   \n3. **Wall and D\u00e9cor**: The walls are painted in a soft blue, with ornate white molding. An unseen artwork is partially visible in the background, likely depicting a historical or cultural image.\n\n4. **Doors**: Behind the two men, there are large wooden doors, likely leading to"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/90.jpg",
+            "pid": "83",
+            "name": "90",
+            "caption": "A collection of various geometric shapes, including green and yellow cylinders, a silver cylinder, small cubes, and a red sphere, arranged on a softly lit surface.",
+            "description": "The image presents a simple geometric arrangement of various 3D shapes on a plain background. \n\n**Key Objects:**\n- There are two prominent green cylinders with shiny surfaces, positioned slightly apart from each other.\n- A metallic silver cylinder stands nearby, reflecting light and adding a glinting effect.\n- A small yellow cylinder is placed next to the silver one.\n- A light brown cube is beside the yellow cylinder.\n- Two smaller shapes\u2014a yellow cube and a red sphere\u2014are positioned toward the right side of the scene.\n\n**Colors:**\n- The dominant colors include green, silver, yellow, light brown, and red.\n- The green shapes have a vibrant hue, while the yellow appears softer.\n- The silver reflects the surrounding colors and"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/81.jpg",
+            "pid": "84",
+            "name": "81",
+            "caption": "The image depicts a polar plot with a circular graph representing a function that maintains a constant value of 1 across all angles, indicating a uniform magnitude.",
+            "description": "The image depicts a polar plot with a circular shape. Here are the key elements:\n\n### Key Objects:\n- **Polar Plot**: The main feature of the image is a polar plot represented by a circle.\n  \n### Colors:\n- **Background**: The background is white, providing a clean and clear contrast.\n- **Plot Line**: The plot line is a simple blue color.\n\n### Axes:\n- **Radial Lines**: There are several radial lines extending from the center, marking angles from 0\u00b0 to 360\u00b0, with increments of 30\u00b0.\n- **Radial Scale**: The scale is marked from 0 to 1, with various divisions indicating fraction values (0.2, 0.4,"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/50.jpg",
+            "pid": "85",
+            "name": "50",
+            "caption": "The diagram illustrates a food web featuring various aquatic species, including large roach, steelhead, roach fry, and stickleback fry, and highlights their ecological relationships with predatory insects and various",
+            "description": "The image illustrates a food web in an aquatic environment, featuring various fish species and associated organisms. \n\n1. **Key Objects**:\n   - **Fish**: There are three primary fish depicted: a **large roach**, **steelhead**, and **stickleback fry**. The roach is smaller and comes in a lighter hue with some blue accents, while the steelhead is larger and has a darker, bluish coloration.\n   - **Invertebrates**: A **predatory insect** labeled as \"lestids\" is illustrated, characterized by its elongated body and slender shape. \n   - **Chironomids**: A red, segmented organism is labeled as **tuft-weaving chironomids**, indicating a"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/86.jpg",
+            "pid": "86",
+            "name": "86",
+            "caption": "The graph illustrates the performance of various language models (LLMs) in terms of accuracy as a function of pretraining loss, highlighting key findings on how scaling impacts their math reasoning abilities.",
+            "description": "The image is a line graph illustrating model performance related to math reasoning abilities as indicated by accuracy on the y-axis and pretrain loss on the x-axis. \n\n### Key Elements:\n\n1. **Axes**:\n   - **Y-Axis (Vertical)**: Labeled \"Acc\" (Accuracy), ranging from 0 to 60, marked with horizontal grid lines.\n   - **X-Axis (Horizontal)**: Labeled \"Pretrain Loss\", starting from around 1.80 to 1.50, marked with vertical grid lines.\n\n2. **Data Series**:\n   - Various colored lines represent different models and training methods:\n     - **Solid Black Line**: Represents In-Context Learning (ICL).\n     - **Solid"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/57.jpg",
+            "pid": "87",
+            "name": "57",
+            "caption": "The image features three geometric shapes\u2014a small blue cube, a larger reflective blue sphere, a shiny green sphere, and a metallic grey cube\u2014arranged on a neutral background.",
+            "description": "The image features a simple still-life arrangement of geometric shapes against a soft, neutral background. \n\n**Key Objects:**\n1. **Shapes**: \n   - A small blue cube positioned to the far left.\n   - A larger, shiny blue sphere located in the center, reflecting light and creating highlights.\n   - A smaller green sphere to the right of the blue sphere, also shiny and reflective.\n   - A metallic gray cube positioned towards the back right of the arrangement.\n\n**Colors:**\n- The block is a soft blue.\n- The larger sphere is a vibrant blue with reflective qualities.\n- The smaller sphere is a bright green.\n- The gray cube has a metallic sheen, presenting a contrast to the more vivid colors of the spheres.\n\n"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/88.jpg",
+            "pid": "88",
+            "name": "88",
+            "caption": "The image depicts a square positioned at a point \\( P \\) where it is tangent to a line \\( l \\); the angles formed at \\( P \\) are denoted as \\( x^\\circ",
+            "description": "The image depicts a geometric figure featuring a square positioned so that it is tangent to a horizontal line labeled \\( l \\) at a specific point \\( P \\). The square is drawn at an angle, resulting in one of its corners touching line \\( l \\) at point \\( P \\).\n\n### Key Elements:\n- **Square**: Rotated, with each corner visible; the angles are indicated as \\( x^\\circ \\) and \\( 2x^\\circ \\).\n- **Line \\( l \\)**: A straight horizontal line beneath the square.\n- **Point \\( P \\)**: The point where the square touches line \\( l \\).\n  \n### Colors and Style:\n- The square is typically shown in a solid line style, likely in"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/59.jpg",
+            "pid": "89",
+            "name": "59",
+            "caption": "The image illustrates a circle with points A, B, C, and D on its circumference, and lines drawn from points A and D to the center O, forming two triangles within the circle.",
+            "description": "The image depicts a geometric diagram centered around a circle. Key elements include:\n\n1. **Circle**: A large, clear circle that serves as the primary shape.\n   \n2. **Points**:\n   - **O**: The center of the circle, marked distinctly.\n   - **A, B, C, D**: Four points located on the circumference of the circle. The points A and B are at the ends of a diameter, while points C and D are on opposite sides of the circle.\n\n3. **Lines**:\n   - A straight line connects points A and B, indicating the diameter of the circle.\n   - Two lines are drawn from point C to point A and from point D to point A, forming triangles within"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/25.jpg",
+            "pid": "90",
+            "name": "25",
+            "caption": "The image depicts a scatter plot with various colored points representing different categories (e.g., Medium Periwinkle, Cadet Blue, and others) across the x-axis and y-axis labeled values, illustrating",
+            "description": "The image is a scatter plot showcasing various data points along the x and y axes. \n\n### Key Elements of the Image:\n\n- **Axes:**\n  - **Horizontal Axis (X-axis):** Labeled as \"xaxis_label,\" ranging from 0 to 100. \n  - **Vertical Axis (Y-axis):** Labeled as \"yaxis_label,\" ranging from approximately 65 to 90.\n\n- **Data Points:**\n  - The plot consists of several circular markers in different colors, representing different categories or groups within the data.\n  - Colors include:\n    - **Medium Periwinkle:** Light blue\n    - **Cadet Blue:** A teal shade\n    - **Dark Gray:** A deep gray\n   "
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/22.jpg",
+            "pid": "91",
+            "name": "22",
+            "caption": "Three elegantly dressed individuals, two women in stylish, period costumes and a man in a striped blazer, pose together against a backdrop of historic buildings and greenery.",
+            "description": "The image showcases three individuals standing together against a backdrop of a light-colored building with a flat roof and tall windows, typical of early 20th-century architecture. The scene appears to be outdoors, possibly in a garden or courtyard, suggested by the greenery present.\n\n### Key Objects:\n- **Three People**: The primary focus of the image is a trio dressed in distinct outfits which hint at playful or theatrical styles.\n- **Hat**: Each individual wears a hat, adding to the character of their costumes.\n- **Building**: The background features a multi-story building with a pillared balcony and other similar architectural elements.\n\n### Colors:\n- **Outfits**: \n  - The left figure sports a colorful, intricately patterned outfit with a"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/17.jpg",
+            "pid": "92",
+            "name": "17",
+            "caption": "The image depicts a triangle ABC with a right angle at vertex C and a line segment AD drawn from vertex A to point D on line segment CB.",
+            "description": "The image depicts a geometric representation involving triangles and a right angle. \n\n### Key Elements:\n1. **Triangles**:\n   - The larger triangle is labeled as \\( \\triangle ABC \\) with vertices A, B, and C.\n   - A smaller triangle, indicated by the point D, connects to the segment AB.\n\n2. **Lines**:\n   - There are straight lines connecting the points A, B, C, and D, forming the triangles.\n   - AC is a vertical line extending upward from point C to point A.\n   - BC is a horizontal line extending rightward from point C to point B.\n\n3. **Angle**:\n   - At point C, there is a right angle symbol, indicating that angle ACB"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/1.jpg",
+            "pid": "93",
+            "name": "1",
+            "caption": "The diagram illustrates a spring system where the spring force performs negative work on a mass, indicated by the decreasing speed and kinetic energy as the mass approaches the spring.",
+            "description": "The image illustrates a physics concept involving a spring and a block on a frictionless surface. Here\u2019s a detailed description:\n\n1. **Background and Color**: The background is a light beige color, providing a neutral canvas for the diagram. The surface below the spring and block is a soft blue.\n\n2. **Spring (k)**: On the left side, there is a coiled spring depicted in a metallic gray color. The coils appear evenly spaced, signifying its tension. The label \"k\" is placed adjacent to the spring, indicating its spring constant.\n\n3. **Block (m)**: To the right of the spring, there is a rectangular block labeled \"m.\" This block is a light teal color and represents a mass that"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/6.jpg",
+            "pid": "94",
+            "name": "6",
+            "caption": "The image illustrates a straight line segment with points labeled A, B, C, and D, where points C and D are positioned between points A and B.",
+            "description": "The image displays a simple linear arrangement of points along a horizontal line. The line itself is straight and extends from left to right.\n\n1. **Key Objects**:\n   - **Line**: A straight, horizontal line is the main element in the image.\n   - **Points**: There are four distinct points marked along the line: A, D, C, and B. Each point is represented by a small black dot.\n\n2. **Colors**:\n   - The line is drawn in black, and the points are also marked in black, creating a monochromatic scheme.\n\n3. **Actions**:\n   - There is no dynamic action taking place in this image; it is a static representation.\n\n4. **Overall Scene**:\n  "
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/10.jpg",
+            "pid": "95",
+            "name": "10",
+            "caption": "The image displays a grid containing various abstract symbols and characters arranged in two rows, with additional circular icons featuring letters positioned below the symbols.",
+            "description": "The image displays a grid of symbols and shapes arranged in a 3x3 pattern, with a cluster of circular icons at the center-bottom. Here\u2019s a detailed breakdown of the elements:\n\n- **Top Row:** \n  - **First Box:** Contains a symbol resembling \"x\" with stylized features.\n  - **Second Box:** Displays a large \"D\" with a unique font.\n  - **Third Box:** Contains a symbol that looks like an abstract \"E\" or possibly the currency symbol for Euro.\n\n- **Middle Row:** \n  - **First Box:** Shows a circular shape resembling the number \"0.\"\n  - **Second Box:** Features a vertical line with a horizontal line crossing it, resembling the letter \"T\" or"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/62.jpg",
+            "pid": "96",
+            "name": "62",
+            "caption": "The image depicts a geometric figure consisting of a rectangle ABCD, with diagonals AC and BD intersecting at point O, and additional segments AE and DF drawn within the rectangle.",
+            "description": "The image presents a geometric figure, specifically a quadrilateral labeled ABCD. Here are the details:\n\n1. **Key Objects**:\n   - **Quadrilateral**: ABCD is the main shape, formed by four lines connecting points A, B, C, and D.\n   - **Intersecting Lines**: There are two diagonal lines\u2014one from point A to point C and the other from point B to point D.\n   - **Points**: Points E and F are marked on the diagonals, with point O being the intersection point of these diagonals.\n\n2. **Colors**: The entire image is rendered in black and white, with no additional colors used. The lines are solid, and the points are indicated by simple"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/8.jpg",
+            "pid": "97",
+            "name": "8",
+            "caption": "A creative arrangement of colorful toy vehicles, including bicycles, a motorcycle, and cars, set against a simple gray background.",
+            "description": "The image showcases a collection of miniature vehicles arranged on a neutral, softly lit background that emphasizes the colors and details of each object. Here\u2019s a breakdown of the scene:\n\n1. **Key Objects**:\n   - **Motorcycle**: A striking red motorcycle positioned towards the left, featuring detailed components and a shiny finish.\n   - **Dirt Bike**: In the center, there\u2019s a sleek, gray dirt bike with green and blue accents, capturing a sporty vibe.\n   - **Cars**: \n     - A small red toy car located to the right of the dirt bike, simple in design but vibrant in color.\n     - A shiny gold sedan, situated on the far right, giving off a luxurious appearance with its reflective surface.\n"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/19.jpg",
+            "pid": "98",
+            "name": "19",
+            "caption": "A clear borosilicate glass beaker filled with a deep red liquid, displaying measurement markings, is set against a blurred background of colorful laboratory containers.",
+            "description": "The image depicts a clear laboratory glass beaker prominently featured in the foreground. \n\n### Key Elements:\n\n- **Beaker**: The beaker is made of borosilicate glass, as indicated by the printed text. It has a capacity of 600 ml, with clear measurement markings on one side, indicating volumes of 100 ml, 200 ml, 300 ml, and 400 ml.\n  \n- **Liquid**: The beaker contains a reddish liquid that contrasts sharply against the glass. This color indicates the presence of a chemical or solution, possibly used in experiments.\n\n### Colors:\n- The beaker is transparent, allowing the vivid red liquid to stand out. The lab environment features out-of-focus backgrounds with various colors, particularly"
+        },
+        {
+            "path": "data/mini_MathVista_grid/base/65.jpg",
+            "pid": "99",
+            "name": "65",
+            "caption": "The image depicts a red curve on a Cartesian plane, showcasing a polynomial function with turning points at the origin and surrounding areas, clearly indicating a local maximum and minimum.",
+            "description": "The image shows a graph of a polynomial function plotted on a Cartesian coordinate system. The key features of the scene include:\n\n- **Axes**: The graph has a horizontal x-axis and a vertical y-axis, each marked with evenly spaced grid lines. The axes extend from approximately -5 to 5 on both the x and y coordinates.\n\n- **Curve**: A smooth red curve represents the polynomial function. It exhibits a combination of upward and downward slopes, indicating that it may have multiple local maxima and minima. The curve passes through several critical points.\n\n- **Critical Points**: There are three highlighted points on the curve, marked with small gray circles. These points likely correspond to local extrema or roots of the function, providing essential information about its"
+        }
+    ]
+}

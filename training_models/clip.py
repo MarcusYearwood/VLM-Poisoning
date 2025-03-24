@@ -122,7 +122,7 @@ class MyClipEnsemble():
         self.clip_preprocess = torchvision.transforms.Compose(
             [
                 torchvision.transforms.Resize(clip_vit_b_32.visual.input_resolution, interpolation=torchvision.transforms.InterpolationMode.BICUBIC, antialias=True),
-                # torchvision.transforms.Lambda(lambda img: torch.clamp(img, 0.0, 255.0) / 255.0),
+                torchvision.transforms.Lambda(lambda img: torch.clamp(img, 0.0, 255.0) / 255.0),
                 torchvision.transforms.CenterCrop(clip_vit_b_32.visual.input_resolution),
                 torchvision.transforms.Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)), # CLIP imgs mean and std.
             ]

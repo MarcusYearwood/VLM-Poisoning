@@ -1,0 +1,15 @@
+dataset_name = "mini_MathVista_grid"
+method = "i2i_EnsembleAttack"
+args = {
+    "model": "clip",
+    "poison_save_pth": f"./data/poisons/{dataset_name}+{method}",
+    "iter_attack": 100,
+    "lr_attack": 0.5,
+    # "base_data_pth": f"data/{dataset_name}/base",
+    "base_data_pth": f"data/{dataset_name}/base_512",
+    "target_data_pth": f"data/{dataset_name}/target",
+    "questions_pth": f"data/{dataset_name}/questions.json",
+    "temperature": 0,
+    "max_new_tokens": 200,
+    "eps": 16,
+}

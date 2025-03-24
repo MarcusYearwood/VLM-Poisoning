@@ -133,11 +133,11 @@ def collate_fn_image(batch):
 
 transform_fn = torchvision.transforms.Compose(
         [
-            torchvision.transforms.Resize(224, interpolation=torchvision.transforms.InterpolationMode.BICUBIC),
-            torchvision.transforms.CenterCrop(224),
+            # torchvision.transforms.Resize(224, interpolation=torchvision.transforms.InterpolationMode.BICUBIC),
+            # torchvision.transforms.CenterCrop(224),
             torchvision.transforms.Lambda(lambda img: img.convert("RGB")),
             torchvision.transforms.Lambda(lambda img: to_tensor(img)),
-            torchvision.transforms.Lambda(lambda img: torch.clamp(img, 0.0, 255.0) / 255.0),
+            torchvision.transforms.Lambda(lambda img: torch.clamp(img, 0.0, 255.0)),
         ]
     )
 
