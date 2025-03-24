@@ -2,6 +2,8 @@ checkpoints/
 .vscode
 Paper/
 
+data/
+
 # dataset
 gqa/
 MiniGPT-4/minigpt4/model_weights/
