@@ -1,0 +1,116 @@
+[
+    {
+        "path": "bar.png",
+        "pid": "0",
+        "name": "bar",
+        "caption": "This image depicts a bar chart that contains four bars. The bars are labeled as follows: Lorem, Ipsum, Dolor, and Sit. The bars are all of the same height, and they are all of the same width. The bar chart is drawn on a white background."
+    },
+    {
+        "path": "docs.png",
+        "pid": "1",
+        "name": "docs",
+        "caption": ""
+    },
+    {
+        "path": "tbl.png",
+        "pid": "2",
+        "name": "tbl",
+        "caption": "This is a table with three columns. The first column has text that is separated into paragraphs. The second column has text that is separated into paragraphs. The third column has text that is separated into paragraphs."
+    },
+    {
+        "path": "synth.png",
+        "pid": "3",
+        "name": "synth",
+        "caption": "In the image, there are four basic shapes. There is a blue cube, a green cylinder, a purple sphere, and a green cylinder. The blue cube is to the left of the purple sphere. The purple sphere is to the left of the green cylinder. The green cylinder is to the right of the purple sphere. The green cylinder is to the right of the blue cube."
+    },
+    {
+        "path": "nat.png",
+        "pid": "4",
+        "name": "nat",
+        "caption": "A photo of Donald Trump and Barack Obama laughing together."
+    },
+    {
+        "path": "pie.png",
+        "pid": "5",
+        "name": "pie",
+        "caption": "The pie chart is divided into five parts, and each part has a different percentage. The largest part is the one on the top, which is labeled as category E. The second largest part is the one on the bottom, which is labeled as category A. The third largest part is the one on the right, which is labeled as category B. The fourth largest part is the one on the left, which is labeled as category C. The smallest part is the one on the top right, which is labeled as category D."
+    },
+    {
+        "path": "sci.png",
+        "pid": "6",
+        "name": "sci",
+        "caption": "A chart of leaves in black and white."
+    },
+    {
+        "path": "vlin.png",
+        "pid": "7",
+        "name": "vlin",
+        "caption": "a blue violin plot"
+    },
+    {
+        "path": "rdar.png",
+        "pid": "8",
+        "name": "rdar",
+        "caption": "A Radar Chart with Lorem Ipsum Data"
+    },
+    {
+        "path": "pzle.png",
+        "pid": "9",
+        "name": "pzle",
+        "caption": ""
+    },
+    {
+        "path": "med.png",
+        "pid": "10",
+        "name": "med",
+        "caption": "A black and white x-ray image of a human head and neck."
+    },
+    {
+        "path": "sctr.png",
+        "pid": "11",
+        "name": "sctr",
+        "caption": "A plot of random data points"
+    },
+    {
+        "path": "func.png",
+        "pid": "12",
+        "name": "func",
+        "caption": "A graph of a function, where the curve is the unit circle, and there are three tangents."
+    },
+    {
+        "path": "line.png",
+        "pid": "13",
+        "name": "line",
+        "caption": "a black and white image of a young girl in a dress standing in front of a white wall"
+    },
+    {
+        "path": "map.png",
+        "pid": "14",
+        "name": "map",
+        "caption": "This is a map of the United States with various shades of blue."
+    },
+    {
+        "path": "abst.png",
+        "pid": "15",
+        "name": "abst",
+        "caption": "This image shows a living room with a large window. There is a chair, coffee table, and picture frame. The walls are beige and the floors are wooden. The curtains are beige and there are light blue curtains on the window."
+    },
+    {
+        "path": "heat.png",
+        "pid": "16",
+        "name": "heat",
+        "caption": "The image shows a heatmap with a random distribution of colors. The x-axis labels are 0, 1, 2, 3, 4, 5, 6, 7, 8. The y-axis labels are 0, 1, 2, 3, 4, 5, 6, 7, 8. The intensity scale is 0.0, 0.2, 0.4, 0.6, 0.8."
+    },
+    {
+        "path": "word.png",
+        "pid": "17",
+        "name": "word",
+        "caption": "Lorem Ipsum Word Cloud"
+    },
+    {
+        "path": "geo.png",
+        "pid": "18",
+        "name": "geo",
+        "caption": "The object in the image is a star-shaped design with geometric shapes."
+    }
+]
