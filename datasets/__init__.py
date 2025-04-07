@@ -168,3 +168,22 @@ class EnsembleImageDataset(torch.utils.data.Dataset):
             # img_tensor = torchvision.transforms.PILToTensor()(img.convert('RGB'))
             img_tensor = transform_fn(img.convert('RGB'))
             return img_tensor, self.image_caps[index]
+
+class AdvDiffVLMImageDataset(torch.utils.data.Dataset):
+    def __init__(self, image_caps, transform=None):
+        '''
+        image_caps is a list of dicts with image paths.
+        Optionally, provide a transform to convert the PIL image to a tensor.
+        '''
+        super().__init__()
+        self.image_caps = image_caps
+        self.transform = transform or torchvision.transforms.ToTensor()  # Default to converting to tensor
+
+    def __len__(self):
+        return len(self.image_caps)
+
+    def __getitem__(self, index):
+        with Image.open(self.image_caps[index]["path"]) as img:
+            pil_image = img.convert("RGB")
+            img_tensor = self.transform(pil_image)
+            return img_tensor, self.image_caps[index]
