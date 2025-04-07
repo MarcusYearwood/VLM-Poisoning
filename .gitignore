@@ -5,6 +5,7 @@ Paper/
 # dataset
 gqa/
 MiniGPT-4/minigpt4/model_weights/
+data/poisons
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
