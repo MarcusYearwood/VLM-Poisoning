@@ -376,7 +376,21 @@ class DDIMSampler(object):
             weights = torch.zeros([72, 5])
             Temp = 2
             N_models = 4
-            idx_time = 159 
+            # idx_time = 159 
+
+            ############################################################## NEW ADDITIONS
+
+            total_steps   = timesteps if ddim_use_original_steps else timesteps.shape[0]
+            idx_time      = int(total_steps * 0.80)-1   # start adaptation at 80 % of the loop
+            # print("\n\nidx_time is", idx_time, " and timesteps.shape[0] is", timesteps.shape[0], "\n\n")
+            # step_window   = int(total_steps * 0.36)   # matches old 72 when total=200
+            # N_models      = len(self.models)
+
+            # costs   = torch.zeros(step_window, N_models, device=device)
+            # weights = torch.zeros(step_window, N_models, device=device)
+
+            ##############################################################
+
             for i, step in enumerate(iterator):
                 index = total_steps - i - 1
                 
@@ -407,6 +421,7 @@ class DDIMSampler(object):
                     # print("using mask", mask.shape, img.shape)
                     img_orig = self.model.q_sample(x0, ts)  # TODO: deterministic forward pass?
                     # print("sizes of img_org, mask, img:", img_orig.size(), mask.size(), img.size())
+                    # print("img size", img_orig.size(), "mask size", mask.size(), "gen img size", img.size())
                     img = img_orig * mask + (1. - mask) * img
                 outs = self.p_sample_ddim(img, cond, ts, index=index, use_original_steps=ddim_use_original_steps,
                                           quantize_denoised=quantize_denoised, temperature=temperature,

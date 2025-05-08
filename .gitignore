@@ -7,8 +7,11 @@ gqa/
 MiniGPT-4/minigpt4/model_weights/
 data/poisons
 data/base
-data/base_224
-data/base_512
+data/mini_MathVista_grid/base_224
+data/mini_MathVista_grid/base_512
+data/mini_MathVista_grid/base_512_masked
+
+*.ckpt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

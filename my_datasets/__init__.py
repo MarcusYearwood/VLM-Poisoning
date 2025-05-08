@@ -187,3 +187,22 @@ class AdvDiffVLMImageDataset(torch.utils.data.Dataset):
             pil_image = img.convert("RGB")
             img_tensor = self.transform(pil_image)
             return img_tensor, self.image_caps[index]
+
+# _to_tensor_f32 = torchvision.transforms.Compose([
+#     torchvision.transforms.PILToTensor(),          # uint8 [0,255]  (C,H,W)
+#     torchvision.transforms.ConvertImageDtype(torch.float32)  # -> f32 [0,1]
+# ])
+
+# class AdvDiffVLMImageDataset(torch.utils.data.Dataset):
+#     def __init__(self, image_caps, transform=_to_tensor_f32):
+#         self.image_caps = image_caps
+#         self.transform  = transform
+
+#     def __len__(self):
+#         return len(self.image_caps)
+
+#     def __getitem__(self, idx):
+#         meta = self.image_caps[idx]
+#         with Image.open(meta["path"]) as img:
+#             img_tensor = self.transform(img.convert("RGB"))
+#         return img_tensor, meta
